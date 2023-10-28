@@ -11,6 +11,7 @@ import streamlink
 
 if os.name == 'nt':
     import ctypes
+
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
@@ -22,9 +23,15 @@ recording = []
 
 hilos = []
 
+
+def firstRun():
+    subprocess.call('bash t.sh'.split())
+
+
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
-    
+
+
 def readConfig():
     global setting
 
@@ -34,15 +41,16 @@ def readConfig():
         'wishlist': Config.get('paths', 'wishlist'),
         'interval': int(Config.get('settings', 'checkInterval')),
         'postProcessingCommand': Config.get('settings', 'postProcessingCommand'),
-        }
+    }
     try:
         setting['postProcessingThreads'] = int(Config.get('settings', 'postProcessingThreads'))
     except ValueError:
         if setting['postProcessingCommand'] and not setting['postProcessingThreads']:
             setting['postProcessingThreads'] = 1
-    
+
     if not os.path.exists(f'{setting["save_directory"]}'):
         os.makedirs(f'{setting["save_directory"]}')
+
 
 def postProcess():
     while True:
@@ -54,7 +62,8 @@ def postProcess():
         filename = os.path.split(path)[-1]
         directory = os.path.dirname(path)
         file = os.path.splitext(filename)[0]
-        subprocess.call(setting['postProcessingCommand'].split() + [path, filename, directory, model,  file, 'cam4'])
+        subprocess.call(setting['postProcessingCommand'].split() + [path, filename, directory, model, file, 'cam4'])
+
 
 class Modelo(threading.Thread):
     def __init__(self, modelo):
@@ -72,7 +81,8 @@ class Modelo(threading.Thread):
             self.online = False
         else:
             self.online = True
-            self.file = os.path.join(setting['save_directory'], self.modelo, f'{datetime.datetime.fromtimestamp(time.time()).strftime("%Y.%m.%d_%H.%M.%S")}_{self.modelo}.mp4')
+            self.file = os.path.join(setting['save_directory'], self.modelo,
+                                     f'{datetime.datetime.fromtimestamp(time.time()).strftime("%Y.%m.%d_%H.%M.%S")}_{self.modelo}.mp4')
             try:
                 session = streamlink.Streamlink()
                 streams = session.streams(f'hlsvariant://{isOnline}')
@@ -96,7 +106,7 @@ class Modelo(threading.Thread):
                                 fd.close()
                                 break
                     if setting['postProcessingCommand']:
-                            processingQueue.put({'model': self.modelo, 'path': self.file})
+                        processingQueue.put({'model': self.modelo, 'path': self.file})
             except Exception as e:
                 with open('log.log', 'a+') as f:
                     f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION: {e}\n')
@@ -140,12 +150,13 @@ class Modelo(threading.Thread):
     def stop(self):
         self._stopevent.set()
 
+
 class CleaningThread(threading.Thread):
     def __init__(self):
         super().__init__()
         self.interval = 0
         self.lock = threading.Lock()
-        
+
     def run(self):
         global hilos, recording
         while True:
@@ -159,6 +170,7 @@ class CleaningThread(threading.Thread):
             for i in range(10, 0, -1):
                 self.interval = i
                 time.sleep(1)
+
 
 class AddModelsThread(threading.Thread):
     def __init__(self):
@@ -190,6 +202,7 @@ class AddModelsThread(threading.Thread):
                 hilo.stop()
         self.lock.release()
 
+
 def isModelInListofObjects(obj, lista):
     result = False
     for i in lista:
@@ -198,7 +211,9 @@ def isModelInListofObjects(obj, lista):
             break
     return result
 
+
 if __name__ == '__main__':
+    firstRun()
     readConfig()
     if setting['postProcessingCommand']:
         processingQueue = queue.Queue()
@@ -217,15 +232,18 @@ if __name__ == '__main__':
             i = 1
             for i in range(setting['interval'], 0, -1):
                 cls()
-                if len(addModelsThread.repeatedModels): print('The following models are more than once in wanted: [\'' + ', '.join(modelo for modelo in addModelsThread.repeatedModels) + '\']')
-                print(f'{len(hilos):02d} alive Threads (1 Thread per non-recording model), cleaning dead/not-online Threads in {cleaningThread.interval:02d} seconds, {addModelsThread.counterModel:02d} models in wanted')
+                if len(addModelsThread.repeatedModels): print(
+                    'The following models are more than once in wanted: [\'' + ', '.join(
+                        modelo for modelo in addModelsThread.repeatedModels) + '\']')
+                print(
+                    f'{len(hilos):02d} alive Threads (1 Thread per non-recording model), cleaning dead/not-online Threads in {cleaningThread.interval:02d} seconds, {addModelsThread.counterModel:02d} models in wanted')
                 print(f'Online Threads (models): {len(recording):02d}')
                 print('The following models are being recorded:')
-                for hiloModelo in recording: print(f'  Model: {hiloModelo.modelo}  -->  File: {os.path.basename(hiloModelo.file)}')
+                for hiloModelo in recording: print(
+                    f'  Model: {hiloModelo.modelo}  -->  File: {os.path.basename(hiloModelo.file)}')
                 print(f'Next check in {i:02d} seconds\r', end='')
                 time.sleep(1)
             addModelsThread.join()
             del addModelsThread, i
         except:
             break
-
