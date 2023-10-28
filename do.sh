@@ -1,22 +1,22 @@
-#/bin/sh
+#!/bin/bash
 source /root/u/milo.conf
 num=${#milolist[@]}
 ((num--))
 runtime=0
 while [ true ]
 do
-  while [ -d "captures" ]
+  while [ -d "captures/up" ]
   do
       temp=${milolist[0]}
       echo "$temp"
       echo "保存ts到${temp}:milo/b/strip"
-      rclone move "captures" "${temp}:milo/b/strip" --buffer-size 32M --transfers 8 -P --low-level-retries 1
+      rclone move "captures/up" "${temp}:milo/b/strip" --buffer-size 32M --transfers 4 -P --tpslimit 2 --low-level-retries 2 --retries 2
       rclone rmdirs "captures"
       if [ -d "captures" ]
       then
           milolist=("${milolist[@]:1:$num}" $temp)
       else
-        echo "${f}上传成功"
+        echo "up上传成功"
         let runtime++
         if [ $runtime -ge 25 ]
         then
