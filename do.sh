@@ -5,14 +5,14 @@ num=${#milolist[@]}
 runtime=0
 while [ true ]
 do
-  while [ -d "captures/up" ]
+  while [ -d "up" ]
   do
       temp=${milolist[0]}
       echo "$temp"
       echo "保存ts到${temp}:milo/b/strip"
-      rclone move "captures/up" "${temp}:milo/b/strip" --buffer-size 32M --transfers 4 -P --tpslimit 2 --low-level-retries 2 --retries 2
-      rclone rmdirs "captures"
-      if [ -d "captures" ]
+      rclone move "up" "${temp}:milo/b/strip" --buffer-size 32M --transfers 4 -P --tpslimit 2 --low-level-retries 2 --retries 2
+      rclone rmdirs "up"
+      if [ -d "up" ]
       then
           milolist=("${milolist[@]:1:$num}" $temp)
       else
