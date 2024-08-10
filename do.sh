@@ -9,8 +9,8 @@ do
   do
       temp=${milolist[0]}
       echo "$temp"
-      echo "保存ts到${temp}:milo/b/strip"
-      rclone move "up" "${temp}:milo/b/strip" --buffer-size 32M --transfers 4 -P --tpslimit 2 --low-level-retries 2 --retries 2
+      echo "保存ts到${temp}:milo/strip"
+      rclone move "up" "${temp}:milo/strip" --buffer-size 32M --transfers 4 -P --tpslimit 2 --low-level-retries 2 --retries 2
       rclone rmdirs "up"
       if [ -d "up" ]
       then
