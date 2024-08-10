@@ -15,4 +15,4 @@ with open("wanted.txt","a") as f:
             f.writelines(j)
             f.write('\n')
             f.close
-            print('%s已添加' % j)
+            print('%s添加成功' % j)
