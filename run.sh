@@ -10,7 +10,7 @@ do
 		        PID=$!
 
 			    # 等待两小时（7200秒）
-			        sleep 7200
+			        sleep 3600 
 
 				    # 杀掉 Python 脚本的进程
 				        kill $PID

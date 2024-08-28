@@ -11,11 +11,12 @@ then
         if [ -d "$d" ]
         then
             echo "移动$d"
+	    d=${d##*/}
             if [ -d "up/$d" ]
             then
-                mv "$d"/* "up/$d"
+		    mv "captures/$d"/* "up/$d"
             else
-                mv "$d" "up"
+                mv "captures/$d" "up"
             fi
         fi
     done
