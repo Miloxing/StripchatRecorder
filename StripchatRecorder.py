@@ -137,14 +137,14 @@ class Modelo(threading.Thread):
             resp = requests.get(f'https://stripchat.com/api/front/v2/models/username/{self.modelo}/cam').json()
             hls_url = ''
             if 'cam' in resp.keys():
-                if {'isCamAvailable', 'streamName', 'viewServers'} <= resp['cam'].keys():
-                    if 'flashphoner-hls' in resp['cam']['viewServers'].keys():
-                        hls_url = f'https://b-{resp["cam"]["viewServers"]["flashphoner-hls"]}.doppiocdn.com/hls/{resp["cam"]["streamName"]}/{resp["cam"]["streamName"]}.m3u8'
+                if {'isCamAvailable', 'streamName'} <= resp['cam'].keys():
+                    if resp['cam']['isCamAvailable'] and resp['cam']['streamName']:
+                        hls_url = f'https://b-hls-13.doppiocdn.live/hls/{resp["cam"]["streamName"]}/{resp["cam"]["streamName"]}.m3u8'
             if len(hls_url):
                 return hls_url
             else:
                 return False
-        except:
+        except Exception as e:
             return False
 
     def stop(self):
