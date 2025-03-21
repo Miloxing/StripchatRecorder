@@ -8,6 +8,7 @@ import subprocess
 import queue
 import requests
 import streamlink
+from flask import Flask, render_template, request, redirect, url_for
 
 if os.name == 'nt':
     import ctypes
@@ -23,6 +24,188 @@ recording = []
 
 hilos = []
 
+# 创建Flask应用
+app = Flask(__name__)
+
+# 添加共享状态
+app_state = {
+    "repeatedModels": [],
+    "counterModel": 0,
+    "port": 8080  # 添加端口状态
+}
+
+# Flask路由
+@app.route('/')
+def index():
+    """主页，显示当前状态"""
+    return render_template('index.html', 
+                           hilos=hilos, 
+                           recording=recording, 
+                           repeatedModels=app_state["repeatedModels"], 
+                           counterModel=app_state["counterModel"],
+                           port=app_state["port"])  # 传递端口号到模板
+
+@app.route('/edit_wanted', methods=['GET', 'POST'])
+def edit_wanted():
+    """查看和编辑wanted.txt文件"""
+    if request.method == 'POST':
+        # 保存更新后的内容到wanted.txt
+        with open(setting['wishlist'], 'w') as f:
+            f.write(request.form['content'])
+        return redirect(url_for('index'))
+    
+    # 读取wanted.txt内容
+    with open(setting['wishlist'], 'r') as f:
+        content = f.read()
+    
+    return render_template('edit_wanted.html', content=content)
+
+# 添加停止录制路由
+@app.route('/stop_recording/<model_name>', methods=['POST'])
+def stop_recording(model_name):
+    """停止特定模特的录制"""
+    for modelo in recording[:]:  # 使用副本遍历，避免在遍历过程中修改
+        if modelo.modelo == model_name:
+            modelo.stop()
+            # 记录停止事件
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 通过Web界面停止录制: {model_name}\n')
+            break
+    return redirect(url_for('index'))
+
+# 添加启动web服务器的函数
+def start_web_server():
+    """在单独的线程中启动Flask应用"""
+    # 创建templates目录
+    os.makedirs(os.path.join(mainDir, 'templates'), exist_ok=True)
+    
+    # 创建模板文件
+    create_templates()
+    
+    # 尝试不同端口启动网页服务器
+    port = 8080
+    max_port = 8090  # 最大尝试端口
+    
+    while port <= max_port:
+        try:
+            app_state["port"] = port  # 更新当前使用的端口
+            app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+            break  # 成功启动，退出循环
+        except OSError as e:
+            # 端口被占用，尝试下一个端口
+            print(f"端口 {port} 已被占用，尝试端口 {port+1}")
+            port += 1
+            if port > max_port:
+                print(f"无法找到可用端口（{8080}-{max_port}），Web界面未启动")
+                break
+
+def create_templates():
+    """创建HTML模板"""
+    index_html = """<!DOCTYPE html>
+<html>
+<head>
+    <title>StripchatRecorder 状态</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="10">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        .button { display: inline-block; padding: 10px 15px; background-color: #4CAF50; 
+                 color: white; text-decoration: none; border-radius: 4px; margin-top: 20px; }
+        .btn-stop { background-color: #f44336; color: white; padding: 5px 10px; 
+                  border: none; cursor: pointer; border-radius: 3px; }
+        .info { background-color: #e7f3fe; border-left: 6px solid #2196F3; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>StripchatRecorder 状态监控</h1>
+        
+        <div class="info">
+            <p>Web界面运行于端口: {{ port }}</p>
+        </div>
+        
+        {% if repeatedModels %}
+        <div class="warning">
+            <p>以下模特在wanted列表中重复出现: {{ repeatedModels|join(', ') }}</p>
+        </div>
+        {% endif %}
+        
+        <div class="stats">
+            <p>活跃线程数: {{ hilos|length }} (每个非录制模特一个线程)</p>
+            <p>正在录制的模特数: {{ recording|length }}</p>
+            <p>wanted列表中的模特总数: {{ counterModel }}</p>
+        </div>
+        
+        {% if recording %}
+        <h2>当前正在录制的模特:</h2>
+        <table>
+            <tr>
+                <th>模特名</th>
+                <th>文件名</th>
+                <th>操作</th>
+            </tr>
+            {% for model in recording %}
+            <tr>
+                <td>{{ model.modelo }}</td>
+                <td>{{ model.file.split('/')[-1] }}</td>
+                <td>
+                    <form action="/stop_recording/{{ model.modelo }}" method="post" style="display: inline;">
+                        <button type="submit" class="btn-stop">停止录制</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>当前没有模特正在录制</p>
+        {% endif %}
+        
+        <a href="/edit_wanted" class="button">编辑 Wanted 列表</a>
+    </div>
+</body>
+</html>"""
+
+    edit_html = """<!DOCTYPE html>
+<html>
+<head>
+    <title>编辑 Wanted 列表</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        textarea { width: 100%; height: 400px; margin-top: 20px; padding: 10px; }
+        .button { display: inline-block; padding: 10px 15px; background-color: #4CAF50; 
+                 color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;
+                 border: none; cursor: pointer; }
+        .cancel { background-color: #f44336; margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>编辑 Wanted 列表</h1>
+        <p>每行输入一个模特名称</p>
+        
+        <form method="post">
+            <textarea name="content">{{ content }}</textarea>
+            <div>
+                <button type="submit" class="button">保存更改</button>
+                <a href="/" class="button cancel">取消</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>"""
+
+    # 写入模板文件
+    with open(os.path.join(mainDir, 'templates', 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(index_html)
+    
+    with open(os.path.join(mainDir, 'templates', 'edit_wanted.html'), 'w', encoding='utf-8') as f:
+        f.write(edit_html)
 
 def firstRun():
     subprocess.call('bash t.sh'.split())
@@ -181,7 +364,7 @@ class AddModelsThread(threading.Thread):
         self.counterModel = 0
 
     def run(self):
-        global hilos, recording
+        global hilos, recording, app_state
         lines = open(setting['wishlist'], 'r').read().splitlines()
         self.wanted = (x for x in lines if x)
         self.lock.acquire()
@@ -200,6 +383,9 @@ class AddModelsThread(threading.Thread):
         for hilo in recording:
             if hilo.modelo not in aux:
                 hilo.stop()
+        # 更新应用状态
+        app_state["repeatedModels"] = self.repeatedModels
+        app_state["counterModel"] = self.counterModel
         self.lock.release()
 
 
@@ -224,6 +410,12 @@ if __name__ == '__main__':
             t.start()
     cleaningThread = CleaningThread()
     cleaningThread.start()
+    
+    # 启动web服务器
+    web_thread = threading.Thread(target=start_web_server)
+    web_thread.daemon = True  # 设置为守护线程，这样主程序退出时，web服务器也会退出
+    web_thread.start()
+    
     while True:
         try:
             readConfig()
