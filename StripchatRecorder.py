@@ -93,16 +93,39 @@ def start_web_server():
             # 更新web状态信息
             app_state["web_status"] = f"Web服务器正在启动，端口: {port}..."
             print(f"\n[Web服务] 正在端口 {port} 上启动Web界面...")
-            app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+            
+            # 先检查端口是否被占用
+            import socket
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            result = sock.connect_ex(('127.0.0.1', port))
+            sock.close()
+            
+            if result == 0:  # 端口已被占用
+                raise OSError(f"端口 {port} 已被占用")
+            
+            # 尝试启动服务器
+            app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False, threaded=True)
             break  # 成功启动，退出循环
-        except OSError as e:
-            # 端口被占用，尝试下一个端口
-            print(f"[Web服务] 端口 {port} 已被占用，尝试端口 {port+1}")
+        except Exception as e:
+            # 捕获所有异常，不仅仅是OSError
+            error_type = type(e).__name__
+            error_msg = str(e)
+            print(f"[Web服务] 端口 {port} 启动失败: {error_type} - {error_msg}")
+            print(f"[Web服务] 尝试端口 {port+1}")
+            
+            # 记录到日志文件
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Web服务启动错误: 端口={port}, 错误类型={error_type}, 错误信息={error_msg}\n')
+            
             port += 1
             if port > max_port:
-                error_msg = f"[Web服务] 无法找到可用端口（{8080}-{max_port}），Web界面未启动"
-                print(error_msg)
-                app_state["web_status"] = error_msg
+                final_error_msg = f"[Web服务] 无法找到可用端口（{8080}-{max_port}），Web界面未启动"
+                print(final_error_msg)
+                app_state["web_status"] = final_error_msg
+                
+                # 记录到日志文件
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} {final_error_msg}\n')
                 break
     
     # 如果成功启动
@@ -110,6 +133,10 @@ def start_web_server():
         success_msg = f"[Web服务] Web界面成功启动在 http://localhost:{port} 或 http://服务器IP:{port}"
         print(success_msg)
         app_state["web_status"] = success_msg
+        
+        # 记录到日志文件
+        with open('log.log', 'a+') as f:
+            f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} {success_msg}\n')
 
 def create_templates():
     """创建HTML模板"""
