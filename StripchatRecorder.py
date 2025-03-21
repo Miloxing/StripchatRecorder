@@ -31,7 +31,8 @@ app = Flask(__name__)
 app_state = {
     "repeatedModels": [],
     "counterModel": 0,
-    "port": 8080  # 添加端口状态
+    "port": 8080,  # 添加端口状态
+    "web_status": "初始化中..."  # 添加web状态信息
 }
 
 # Flask路由
@@ -89,15 +90,26 @@ def start_web_server():
     while port <= max_port:
         try:
             app_state["port"] = port  # 更新当前使用的端口
+            # 更新web状态信息
+            app_state["web_status"] = f"Web服务器正在启动，端口: {port}..."
+            print(f"\n[Web服务] 正在端口 {port} 上启动Web界面...")
             app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
             break  # 成功启动，退出循环
         except OSError as e:
             # 端口被占用，尝试下一个端口
-            print(f"端口 {port} 已被占用，尝试端口 {port+1}")
+            print(f"[Web服务] 端口 {port} 已被占用，尝试端口 {port+1}")
             port += 1
             if port > max_port:
-                print(f"无法找到可用端口（{8080}-{max_port}），Web界面未启动")
+                error_msg = f"[Web服务] 无法找到可用端口（{8080}-{max_port}），Web界面未启动"
+                print(error_msg)
+                app_state["web_status"] = error_msg
                 break
+    
+    # 如果成功启动
+    if port <= max_port:
+        success_msg = f"[Web服务] Web界面成功启动在 http://localhost:{port} 或 http://服务器IP:{port}"
+        print(success_msg)
+        app_state["web_status"] = success_msg
 
 def create_templates():
     """创建HTML模板"""
@@ -412,6 +424,7 @@ if __name__ == '__main__':
     cleaningThread.start()
     
     # 启动web服务器
+    print("[Web服务] 正在后台启动Web界面...")
     web_thread = threading.Thread(target=start_web_server)
     web_thread.daemon = True  # 设置为守护线程，这样主程序退出时，web服务器也会退出
     web_thread.start()
@@ -424,6 +437,10 @@ if __name__ == '__main__':
             i = 1
             for i in range(setting['interval'], 0, -1):
                 cls()
+                # 显示Web状态信息
+                print(f"[Web服务状态] {app_state['web_status']}")
+                print("=" * 50)
+                
                 if len(addModelsThread.repeatedModels): print(
                     'The following models are more than once in wanted: [\'' + ', '.join(
                         modelo for modelo in addModelsThread.repeatedModels) + '\']')
