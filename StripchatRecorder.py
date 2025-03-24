@@ -272,6 +272,55 @@ def readConfig():
 
     if not os.path.exists(f'{setting["save_directory"]}'):
         os.makedirs(f'{setting["save_directory"]}')
+    
+    # 创建与captures平级的up文件夹，用于存放待上传的已完成录制
+    captures_parent_dir = os.path.dirname(setting['save_directory'])
+    up_dir = os.path.join(captures_parent_dir, 'up')
+    setting['up_directory'] = up_dir  # 保存到设置中方便其他函数使用
+    if not os.path.exists(up_dir):
+        os.makedirs(up_dir)
+
+
+def process_existing_captures():
+    """处理已经存在于captures目录中的录制文件，将它们移动到up目录"""
+    import shutil
+    import glob
+    
+    captures_dir = setting['save_directory']
+    up_dir = setting['up_directory']  # 使用保存在设置中的up目录路径
+    
+    # 查找所有模特子目录
+    model_dirs = [d for d in os.listdir(captures_dir) if os.path.isdir(os.path.join(captures_dir, d)) and d != 'up']
+    
+    moved_count = 0
+    for model_dir in model_dirs:
+        model_path = os.path.join(captures_dir, model_dir)
+        # 查找所有MP4文件
+        mp4_files = glob.glob(os.path.join(model_path, '*.mp4'))
+        
+        for file_path in mp4_files:
+            # 检查文件是否大于1KB
+            if os.path.getsize(file_path) > 1024:
+                try:
+                    # 创建模特名称对应的up子目录
+                    model_up_dir = os.path.join(up_dir, model_dir)
+                    if not os.path.exists(model_up_dir):
+                        os.makedirs(model_up_dir)
+                    
+                    filename = os.path.basename(file_path)
+                    dest_path = os.path.join(model_up_dir, filename)
+                    # 移动文件
+                    shutil.move(file_path, dest_path)
+                    moved_count += 1
+                    # 记录日志
+                    with open('log.log', 'a+') as f:
+                        f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 已存在的文件已移动到上传文件夹: {dest_path}\n')
+                except Exception as e:
+                    with open('log.log', 'a+') as f:
+                        f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 移动已存在文件时出错: {file_path} -> {e}\n')
+    
+    if moved_count > 0:
+        print(f"[初始化] 已将 {moved_count} 个现有录制文件移动到上传文件夹")
 
 
 def postProcess():
@@ -284,7 +333,32 @@ def postProcess():
         filename = os.path.split(path)[-1]
         directory = os.path.dirname(path)
         file = os.path.splitext(filename)[0]
-        subprocess.call(setting['postProcessingCommand'].split() + [path, filename, directory, model, file, 'cam4'])
+        
+        # 执行原有的后处理命令
+        if setting['postProcessingCommand']:
+            subprocess.call(setting['postProcessingCommand'].split() + [path, filename, directory, model, file, 'cam4'])
+        
+        try:
+            # 将文件移动到up文件夹（与captures平级）下对应模特的子目录
+            up_dir = setting['up_directory']
+            # 创建模特名称对应的up子目录
+            model_up_dir = os.path.join(up_dir, model)
+            if not os.path.exists(model_up_dir):
+                os.makedirs(model_up_dir)
+                
+            dest_path = os.path.join(model_up_dir, filename)
+            
+            # 如果文件仍然存在并且大小大于1KB，则移动到up文件夹
+            if os.path.isfile(path) and os.path.getsize(path) > 1024:
+                import shutil
+                shutil.move(path, dest_path)
+                print(f"[移动文件] {filename} 已移动到上传文件夹: {model_up_dir}")
+                # 记录日志
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 文件已移动到上传文件夹: {dest_path}\n')
+        except Exception as e:
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 移动文件时出错: {e}\n')
 
 
 class Modelo(threading.Thread):
@@ -346,10 +420,26 @@ class Modelo(threading.Thread):
                 break
         self.lock.release()
         try:
-            file = os.path.join(os.getcwd(), self.file)
+            file = os.path.join(os.getcwd(), self.file) if os.getcwd() in self.file else self.file
             if os.path.isfile(file):
                 if os.path.getsize(file) <= 1024:
                     os.remove(file)
+                elif setting['postProcessingCommand'] == '':
+                    # 如果没有设置后处理命令，直接将文件移动到上传文件夹
+                    up_dir = setting['up_directory']
+                    # 创建模特名称对应的up子目录
+                    model_up_dir = os.path.join(up_dir, self.modelo)
+                    if not os.path.exists(model_up_dir):
+                        os.makedirs(model_up_dir)
+                        
+                    filename = os.path.basename(file)
+                    dest_path = os.path.join(model_up_dir, filename)
+                    import shutil
+                    shutil.move(file, dest_path)
+                    print(f"[移动文件] {filename} 已移动到上传文件夹: {model_up_dir}")
+                    # 记录日志
+                    with open('log.log', 'a+') as f:
+                        f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 文件已移动到上传文件夹: {dest_path}\n')
         except Exception as e:
             with open('log.log', 'a+') as f:
                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION: {e}\n')
@@ -440,6 +530,10 @@ def isModelInListofObjects(obj, lista):
 if __name__ == '__main__':
     firstRun()
     readConfig()
+    
+    # 处理已有的captures文件
+    process_existing_captures()
+    
     if setting['postProcessingCommand']:
         processingQueue = queue.Queue()
         postprocessingWorkers = []
