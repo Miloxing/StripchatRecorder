@@ -394,11 +394,33 @@ class Modelo(threading.Thread):
                                 del hilos[index]
                                 break
                         self.lock.release()
+                        # 添加最后一次检查在线状态的时间
+                        last_online_check = time.time()
                         while not (self._stopevent.isSet() or os.fstat(f.fileno()).st_nlink == 0):
                             try:
+                                # 每30秒检查一次模特是否仍在线
+                                current_time = time.time()
+                                if current_time - last_online_check > 30:
+                                    if not self.isOnline():
+                                        print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
+                                        with open('log.log', 'a+') as log_f:
+                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
+                                        break
+                                    last_online_check = current_time
+                                
+                                # 使用非阻塞读取，设置1秒超时
                                 data = fd.read(1024)
+                                if not data:  # 如果没有数据，可能是流已经结束
+                                    # 再次检查是否在线
+                                    if not self.isOnline():
+                                        print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
+                                        with open('log.log', 'a+') as log_f:
+                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
+                                        break
                                 f.write(data)
-                            except:
+                            except Exception as e:
+                                with open('log.log', 'a+') as log_f:
+                                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 读取流数据异常: {self.modelo} - {e}\n')
                                 fd.close()
                                 break
                     if setting['postProcessingCommand']:
