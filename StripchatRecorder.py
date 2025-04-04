@@ -8,6 +8,7 @@ import subprocess
 import queue
 import requests
 import streamlink
+import shutil
 from flask import Flask, render_template, request, redirect, url_for
 
 if os.name == 'nt':
@@ -32,19 +33,43 @@ app_state = {
     "repeatedModels": [],
     "counterModel": 0,
     "port": 8080,  # 添加端口状态
-    "web_status": "初始化中..."  # 添加web状态信息
+    "web_status": "初始化中...",  # 添加web状态信息
+    "storage_info": {}  # 添加存储空间信息
 }
+
+# 获取存储空间信息
+def get_storage_info():
+    """获取存储空间使用情况"""
+    storage_info = {}
+    
+    # 获取当前目录存储空间
+    total, used, free = shutil.disk_usage("/")
+    storage_info["local"] = {
+        "total": total // (2**30),  # 转换为GB
+        "used": used // (2**30),
+        "free": free // (2**30),
+        "percent_used": used * 100 // total
+    }
+    
+    # 如果有配置远程存储，也可以添加
+    # 这里需要根据实际情况调整
+    
+    return storage_info
 
 # Flask路由
 @app.route('/')
 def index():
     """主页，显示当前状态"""
+    # 更新存储空间信息
+    app_state["storage_info"] = get_storage_info()
+    
     return render_template('index.html', 
                            hilos=hilos, 
                            recording=recording, 
                            repeatedModels=app_state["repeatedModels"], 
                            counterModel=app_state["counterModel"],
-                           port=app_state["port"])  # 传递端口号到模板
+                           port=app_state["port"],
+                           storage_info=app_state["storage_info"])  # 传递存储信息到模板
 
 @app.route('/edit_wanted', methods=['GET', 'POST'])
 def edit_wanted():
@@ -157,6 +182,10 @@ def create_templates():
         .btn-stop { background-color: #f44336; color: white; padding: 5px 10px; 
                   border: none; cursor: pointer; border-radius: 3px; }
         .info { background-color: #e7f3fe; border-left: 6px solid #2196F3; padding: 10px; margin: 10px 0; }
+        .progress-bar { height: 20px; background-color: #f2f2f2; border-radius: 4px; overflow: hidden; }
+        .progress { height: 100%; background-color: #4CAF50; }
+        .progress.warning { background-color: #ff9800; }
+        .progress.danger { background-color: #f44336; }
     </style>
 </head>
 <body>
@@ -166,6 +195,31 @@ def create_templates():
         <div class="info">
             <p>Web界面运行于端口: {{ port }}</p>
         </div>
+
+        <!-- 存储空间信息 -->
+        <h2>存储空间信息</h2>
+        <table>
+            <tr>
+                <th>位置</th>
+                <th>总容量</th>
+                <th>已使用</th>
+                <th>剩余</th>
+                <th>使用率</th>
+            </tr>
+            <tr>
+                <td>本地磁盘</td>
+                <td>{{ storage_info.local.total }} GB</td>
+                <td>{{ storage_info.local.used }} GB</td>
+                <td>{{ storage_info.local.free }} GB</td>
+                <td>
+                    <div class="progress-bar">
+                        <div class="progress {% if storage_info.local.percent_used > 90 %}danger{% elif storage_info.local.percent_used > 70 %}warning{% endif %}" 
+                             style="width: {{ storage_info.local.percent_used }}%"></div>
+                    </div>
+                    {{ storage_info.local.percent_used }}%
+                </td>
+            </tr>
+        </table>
         
         {% if repeatedModels %}
         <div class="warning">
