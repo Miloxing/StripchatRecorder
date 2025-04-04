@@ -17,7 +17,14 @@ function cleanup_small_files() {
     echo "[${current_time}] 开始清理目录 ${directory} 中的小文件 (小于 ${MIN_FILE_SIZE} 字节)" >> $CLEAN_LOG
     
     find "$directory" -type f -name "*.mp4" -size -${MIN_FILE_SIZE}c | while read -r file; do
-        file_size=$(stat -f "%z" "$file")
+        # 根据操作系统类型使用不同的stat命令
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            # macOS
+            file_size=$(stat -f "%z" "$file")
+        else
+            # Linux及其他系统
+            file_size=$(stat -c "%s" "$file")
+        fi
         echo "[${current_time}] 删除小文件: $file (大小: ${file_size} 字节)" >> $CLEAN_LOG
         rm -f "$file"
     done
@@ -73,17 +80,21 @@ do
       # 执行 rclone rmdirs 清理空目录
       rclone rmdirs "$source_dir"
       
-      if [ -d "up" ]
-      then
-          milolist=("${milolist[@]:1:$num}" $temp)
-      else
-        echo "up上传成功"
-        let runtime++
-        if [ $runtime -ge 25 ]
-        then
-            source /root/u/milo.conf
-            runtime=0
-        fi
+      # 确保up目录始终存在，即使其中的文件已经被移动
+      if [ ! -d "up" ]; then
+          mkdir -p "up"
+          echo "up目录不存在，已重新创建"
+      fi
+      
+      # 检查up目录是否为空（而不是检查是否存在）
+      if [ -z "$(ls -A up)" ]; then
+          echo "up上传成功，目录已清空但保留"
+          let runtime++
+          if [ $runtime -ge 25 ]
+          then
+              source /root/u/milo.conf
+              runtime=0
+          fi
       fi
       sleep 60
   done
