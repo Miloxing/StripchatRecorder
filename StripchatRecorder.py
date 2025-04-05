@@ -94,10 +94,43 @@ def stop_recording(model_name):
     """停止特定模特的录制"""
     for modelo in recording[:]:  # 使用副本遍历，避免在遍历过程中修改
         if modelo.modelo == model_name:
+            # 在停止之前先获取文件路径
+            file_path = modelo.file
             modelo.stop()
+            
             # 记录停止事件
             with open('log.log', 'a+') as f:
                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 通过Web界面停止录制: {model_name}\n')
+            
+            # 处理录制文件
+            try:
+                # 检查文件是否存在并且大小大于1KB
+                if os.path.isfile(file_path) and os.path.getsize(file_path) > 1024:
+                    # 如果有后处理命令，添加到处理队列
+                    if setting['postProcessingCommand']:
+                        processingQueue.put({'model': model_name, 'path': file_path})
+                        with open('log.log', 'a+') as f:
+                            f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 已将文件添加到处理队列: {file_path}\n')
+                    else:
+                        # 否则直接移动到上传文件夹
+                        up_dir = setting['up_directory']
+                        # 创建模特名称对应的up子目录
+                        model_up_dir = os.path.join(up_dir, model_name)
+                        if not os.path.exists(model_up_dir):
+                            os.makedirs(model_up_dir)
+                        
+                        filename = os.path.basename(file_path)
+                        dest_path = os.path.join(model_up_dir, filename)
+                        import shutil
+                        shutil.move(file_path, dest_path)
+                        print(f"[Web停止] {filename} 已移动到上传文件夹: {model_up_dir}")
+                        # 记录日志
+                        with open('log.log', 'a+') as f:
+                            f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Web停止后文件已移动到上传文件夹: {dest_path}\n')
+            except Exception as e:
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Web停止后移动文件时出错: {e}\n')
+            
             break
     return redirect(url_for('index'))
 
@@ -383,6 +416,12 @@ def process_existing_captures():
     captures_dir = setting['save_directory']
     up_dir = setting['up_directory']  # 使用保存在设置中的up目录路径
     
+    # 获取当前正在录制的文件列表
+    active_recording_files = []
+    for modelo in recording:
+        if hasattr(modelo, 'file') and modelo.file:
+            active_recording_files.append(modelo.file)
+    
     # 查找所有模特子目录
     model_dirs = [d for d in os.listdir(captures_dir) if os.path.isdir(os.path.join(captures_dir, d)) and d != 'up']
     
@@ -393,6 +432,12 @@ def process_existing_captures():
         mp4_files = glob.glob(os.path.join(model_path, '*.mp4'))
         
         for file_path in mp4_files:
+            # 跳过正在录制的文件
+            if file_path in active_recording_files:
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 跳过正在录制的文件: {file_path}\n')
+                continue
+                
             # 检查文件是否大于1KB
             if os.path.getsize(file_path) > 1024:
                 try:
@@ -548,11 +593,18 @@ class Modelo(threading.Thread):
                     
                     # 处理最后一个文件
                     if os.path.isfile(self.file) and os.path.getsize(self.file) > 1024:
+                        # 无论是否设置后处理命令，都先将文件移动到上传文件夹
+                        self.move_file_to_up(self.file)
+                        
+                        # 如果设置了后处理命令，则添加到处理队列（使用移动后的路径）
                         if setting['postProcessingCommand']:
-                            processingQueue.put({'model': self.modelo, 'path': self.file})
-                        else:
-                            # 如果没有设置后处理命令，直接将文件移动到上传文件夹
-                            self.move_file_to_up(self.file)
+                            up_dir = setting['up_directory']
+                            model_up_dir = os.path.join(up_dir, self.modelo)
+                            filename = os.path.basename(self.file)
+                            dest_path = os.path.join(model_up_dir, filename)
+                            processingQueue.put({'model': self.modelo, 'path': dest_path})
+                            with open('log.log', 'a+') as f:
+                                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 已将移动后的文件添加到处理队列: {dest_path}\n')
                     elif os.path.isfile(self.file):
                         # 如果文件太小，删除它
                         os.remove(self.file)
@@ -603,8 +655,8 @@ class Modelo(threading.Thread):
             if os.path.isfile(file):
                 if os.path.getsize(file) <= 1024:
                     os.remove(file)
-                elif setting['postProcessingCommand'] == '':
-                    # 如果没有设置后处理命令，直接将文件移动到上传文件夹
+                else:
+                    # 无论是否设置后处理命令，都先将文件移动到上传文件夹，确保文件不会丢失
                     up_dir = setting['up_directory']
                     # 创建模特名称对应的up子目录
                     model_up_dir = os.path.join(up_dir, self.modelo)
@@ -619,6 +671,12 @@ class Modelo(threading.Thread):
                     # 记录日志
                     with open('log.log', 'a+') as f:
                         f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 文件已移动到上传文件夹: {dest_path}\n')
+                    
+                    # 如果设置了后处理命令，则添加到处理队列
+                    if setting['postProcessingCommand']:
+                        processingQueue.put({'model': self.modelo, 'path': dest_path})
+                        with open('log.log', 'a+') as f:
+                            f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 已将移动后的文件添加到处理队列: {dest_path}\n')
         except Exception as e:
             with open('log.log', 'a+') as f:
                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION: {e}\n')
@@ -706,6 +764,44 @@ def isModelInListofObjects(obj, lista):
     return result
 
 
+# 添加定时检查所有录制文件的线程
+class CheckCapturesThread(threading.Thread):
+    def __init__(self):
+        super().__init__()
+        self.daemon = True  # 设置为守护线程
+        
+    def run(self):
+        """定期检查所有模特目录中的录制文件并将其移动到up目录"""
+        print("[定时任务] 启动定时检查录制文件的线程")
+        with open('log.log', 'a+') as f:
+            f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 启动定时检查录制文件的线程\n')
+            
+        # 第一次运行等待10分钟，避免与初始化时的process_existing_captures冲突
+        time.sleep(600)
+        
+        while True:
+            try:
+                print(f"[定时任务] {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 开始定时检查录制文件")
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 开始定时检查录制文件\n')
+                
+                # 获取所有已存在的mp4文件并移动到up目录
+                process_existing_captures()
+                
+                print(f"[定时任务] {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 定时检查完成，下次检查将在1小时后进行")
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 定时检查完成，下次检查将在1小时后进行\n')
+                
+                # 每小时执行一次
+                time.sleep(3600)
+            except Exception as e:
+                error_msg = f"定时检查录制文件出错: {e}"
+                print(f"[定时任务] {error_msg}")
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} {error_msg}\n')
+                time.sleep(300)  # 出错后5分钟后重试
+
+
 if __name__ == '__main__':
     firstRun()
     readConfig()
@@ -722,6 +818,10 @@ if __name__ == '__main__':
             t.start()
     cleaningThread = CleaningThread()
     cleaningThread.start()
+    
+    # 启动定时检查录制文件的线程
+    checkCapturesThread = CheckCapturesThread()
+    checkCapturesThread.start()
     
     # 启动web服务器
     print("[Web服务] 正在后台启动Web界面...")
