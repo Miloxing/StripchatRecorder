@@ -557,7 +557,7 @@ class Modelo(threading.Thread):
                     current_file = open(self.file, 'wb')
                     print(f"[开始录制] 开始录制模特 {self.modelo} 到文件 {os.path.basename(self.file)}")
                     with open('log.log', 'a+') as log_f:
-                        log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 开始录制: {self.modelo} -> {self.file}\\n')
+                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 开始录制: {self.modelo} -> {self.file}\n')
 
                     while not (self._stopevent.isSet() or os.fstat(current_file.fileno()).st_nlink == 0):
                         try:
@@ -567,7 +567,7 @@ class Modelo(threading.Thread):
                                 if not self.isOnline():
                                     print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
                                     with open('log.log', 'a+') as log_f:
-                                        log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\\n')
+                                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
                                     break
                                 last_online_check = current_time
                             
@@ -586,10 +586,10 @@ class Modelo(threading.Thread):
                                     try:
                                         os.remove(completed_file)
                                         with open('log.log', 'a+') as log_f:
-                                            log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小分段文件: {completed_file}\\n')
+                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小分段文件: {completed_file}\n')
                                     except OSError as e:
                                          with open('log.log', 'a+') as log_f:
-                                            log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小分段文件失败: {e}\\n')
+                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小分段文件失败: {e}\n')
                                 
                                 # 创建新文件并更新开始时间
                                 self.segment_start_time = current_time
@@ -597,7 +597,7 @@ class Modelo(threading.Thread):
                                 current_file = open(self.file, 'wb')
                                 print(f"[分段录制] 创建新录制文件 {os.path.basename(self.file)} 用于模特 {self.modelo}")
                                 with open('log.log', 'a+') as log_f:
-                                    log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 创建新录制片段: {self.file}\\n')
+                                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 创建新录制片段: {self.file}\n')
                             
                             # 使用非阻塞读取，设置1秒超时
                             data = fd.read(1024)
@@ -606,14 +606,14 @@ class Modelo(threading.Thread):
                                 if not self.isOnline():
                                     print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
                                     with open('log.log', 'a+') as log_f:
-                                        log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\\n')
+                                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
                                     break
                                 else: # 如果仍然在线但没有数据，短暂休眠避免空转
                                     time.sleep(0.5)
                             current_file.write(data)
                         except Exception as e:
                             with open('log.log', 'a+') as log_f:
-                                log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 读取流数据异常: {self.modelo} - {e}\\n')
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 读取流数据异常: {self.modelo} - {e}\n')
                             fd.close() # 确保关闭fd
                             break
 
@@ -622,7 +622,7 @@ class Modelo(threading.Thread):
                        current_file.close()
                        print(f"[停止录制] 停止录制模特 {self.modelo}, 文件: {os.path.basename(self.file)}")
                        with open('log.log', 'a+') as log_f:
-                            log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 停止录制: {self.modelo}, 文件: {self.file}\\n')
+                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 停止录制: {self.modelo}, 文件: {self.file}\n')
 
 
                     # 处理最后一个文件
@@ -637,23 +637,23 @@ class Modelo(threading.Thread):
                         try:
                            os.remove(self.file)
                            with open('log.log', 'a+') as log_f:
-                                log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小最终文件: {self.file}\\n')
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小最终文件: {self.file}\n')
                         except OSError as e:
                              with open('log.log', 'a+') as log_f:
-                                log_f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小最终文件失败: {e}\\n')
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 删除过小最终文件失败: {e}\n')
 
             except streamlink.exceptions.NoPluginError:
                  with open('log.log', 'a+') as f:
-                    f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Streamlink 无法找到插件处理 URL: {self.modelo}\\n')
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Streamlink 无法找到插件处理 URL: {self.modelo}\n')
                  self.online = False # 标记为不在线
             except streamlink.exceptions.PluginError as e:
                  with open('log.log', 'a+') as f:
-                    f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Streamlink 插件错误: {self.modelo} - {e}\\n')
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} Streamlink 插件错误: {self.modelo} - {e}\n')
                  self.online = False # 标记为不在线
             except Exception as e:
                 # 捕捉其他可能的异常，例如网络问题或文件系统问题
                 with open('log.log', 'a+') as f:
-                    f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 录制线程启动/运行异常: {self.modelo} - {type(e).__name__}: {e}\\n')
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 录制线程启动/运行异常: {self.modelo} - {type(e).__name__}: {e}\n')
                 self.online = False # 标记为不在线
                 # 不需要手动调用 self.stop()，因为线程会自然结束
             finally:
@@ -731,7 +731,7 @@ class Modelo(threading.Thread):
             pass
         except Exception as e:
             with open('log.log', 'a+') as f:
-                 f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION during exceptionHandler cleanup: {e}\\n')
+                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION during exceptionHandler cleanup: {e}\n')
 
     def isOnline(self):
         try:
@@ -765,11 +765,11 @@ class Modelo(threading.Thread):
                 return False
         except requests.exceptions.RequestException as e: # 更具体的异常捕获
              with open('log.log', 'a+') as f:
-                 f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 网络请求错误 (isOnline): {self.modelo} - {e}\\n')
+                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 网络请求错误 (isOnline): {self.modelo} - {e}\n')
              return False
         except Exception as e:
              with open('log.log', 'a+') as f:
-                 f.write(f'\\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 检查在线状态时出错 (isOnline): {self.modelo} - {e}\\n')
+                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 检查在线状态时出错 (isOnline): {self.modelo} - {e}\n')
              return False
 
     def stop(self):
