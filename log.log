@@ -1,0 +1,1638 @@
+
+22/03/2025 01:39:19 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+22/03/2025 02:29:27 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+22/03/2025 05:00:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+22/03/2025 05:05:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/92781956/92781956.m3u8)
+
+22/03/2025 06:21:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+22/03/2025 06:22:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+22/03/2025 07:10:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+22/03/2025 07:11:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+22/03/2025 07:26:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175040864/175040864.m3u8 (403 Client Error: Forbidden for url: https://b-hls-25.doppiocdn.live/hls/175040864/175040864.m3u8?playlistType=standard)
+
+22/03/2025 07:59:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+22/03/2025 08:46:57 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/78788500/78788500.m3u8)
+
+22/03/2025 09:35:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+22/03/2025 12:06:56 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/148117706/148117706.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/148117706/148117706.m3u8)
+
+22/03/2025 12:24:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/130332269/130332269.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/130332269/130332269.m3u8)
+
+22/03/2025 14:48:33 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+22/03/2025 14:48:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+22/03/2025 14:49:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+22/03/2025 17:29:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+22/03/2025 19:38:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/154279710/154279710.m3u8 (404 Client Error: Not Found for url: https://b-hls-20.doppiocdn.live/hls/154279710/154279710.m3u8)
+
+22/03/2025 20:01:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/127199947/127199947.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/127199947/127199947.m3u8)
+
+22/03/2025 20:01:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/127199947/127199947.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/127199947/127199947.m3u8)
+
+22/03/2025 20:06:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/72501289/72501289.m3u8 (404 Client Error: Not Found for url: https://b-hls-02.doppiocdn.live/hls/72501289/72501289.m3u8)
+
+22/03/2025 20:55:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/176931909/176931909.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/176931909/176931909.m3u8)
+
+22/03/2025 21:35:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+22/03/2025 23:23:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/166487289/166487289.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/166487289/166487289.m3u8)
+
+23/03/2025 10:21:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8 (404 Client Error: Not Found for url: https://b-hls-02.doppiocdn.live/hls/121630982/121630982.m3u8)
+
+23/03/2025 14:08:11 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181227702/181227702.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/181227702/181227702.m3u8)
+
+23/03/2025 19:01:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117758835/117758835.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/117758835/117758835.m3u8)
+
+24/03/2025 13:48:08 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+24/03/2025 15:35:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (404 Client Error: Not Found for url: https://b-hls-10.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+24/03/2025 18:15:17 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117758835/117758835.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/117758835/117758835.m3u8)
+
+24/03/2025 18:35:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+24/03/2025 19:23:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181227702/181227702.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/181227702/181227702.m3u8)
+
+24/03/2025 20:01:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/72501289/72501289.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/72501289/72501289.m3u8)
+
+24/03/2025 20:01:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/72501289/72501289.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/72501289/72501289.m3u8)
+
+24/03/2025 21:02:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+24/03/2025 21:37:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+24/03/2025 21:45:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/93629441/93629441.m3u8 (404 Client Error: Not Found for url: https://b-hls-20.doppiocdn.live/hls/93629441/93629441.m3u8)
+
+24/03/2025 21:49:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+24/03/2025 22:36:33 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/31887603/31887603.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/31887603/31887603.m3u8)
+
+25/03/2025 06:15:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+25/03/2025 11:02:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121356316/121356316.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/121356316/121356316.m3u8)
+
+25/03/2025 11:46:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+25/03/2025 11:47:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+25/03/2025 12:13:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/130332269/130332269.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/130332269/130332269.m3u8)
+
+25/03/2025 20:00:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+25/03/2025 20:01:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+25/03/2025 21:02:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/147209306/147209306.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/147209306/147209306.m3u8)
+
+25/03/2025 22:07:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+25/03/2025 22:07:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+26/03/2025 00:41:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+26/03/2025 02:08:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+26/03/2025 02:09:16 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+26/03/2025 13:01:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123293744/123293744.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/123293744/123293744.m3u8)
+
+26/03/2025 20:02:26 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117762271/117762271.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/117762271/117762271.m3u8)
+
+27/03/2025 00:44:17 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+27/03/2025 03:02:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+27/03/2025 05:49:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+27/03/2025 05:49:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+27/03/2025 05:49:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+27/03/2025 10:59:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+27/03/2025 12:26:56 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+27/03/2025 12:38:10 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+27/03/2025 13:56:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+27/03/2025 14:00:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+27/03/2025 20:00:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+27/03/2025 20:00:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117758835/117758835.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/117758835/117758835.m3u8)
+
+27/03/2025 20:42:48 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/176931909/176931909.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/176931909/176931909.m3u8)
+
+27/03/2025 21:06:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/92781956/92781956.m3u8)
+
+27/03/2025 21:13:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+27/03/2025 21:35:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-20.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+27/03/2025 22:16:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+27/03/2025 22:25:03 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+01/04/2025 21:44:22 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+01/04/2025 21:44:22 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+01/04/2025 21:44:22 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+01/04/2025 22:04:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/94957866/94957866.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/94957866/94957866.m3u8)
+
+01/04/2025 22:20:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+01/04/2025 23:24:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/130863680/130863680.m3u8 (404 Client Error: Not Found for url: https://b-hls-10.doppiocdn.live/hls/130863680/130863680.m3u8)
+
+02/04/2025 11:52:10 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+02/04/2025 17:38:52 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121821402/121821402.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/121821402/121821402.m3u8)
+
+02/04/2025 19:31:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117762271/117762271.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/117762271/117762271.m3u8)
+
+02/04/2025 20:39:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+02/04/2025 21:58:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+02/04/2025 21:58:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+02/04/2025 23:02:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121356316/121356316.m3u8 (404 Client Error: Not Found for url: https://b-hls-20.doppiocdn.live/hls/121356316/121356316.m3u8)
+
+03/04/2025 00:20:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121823173/121823173.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/121823173/121823173.m3u8)
+
+03/04/2025 11:03:41 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+03/04/2025 11:03:41 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+03/04/2025 11:03:41 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+03/04/2025 11:28:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121823173/121823173.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/121823173/121823173.m3u8)
+
+03/04/2025 11:28:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121823173/121823173.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/121823173/121823173.m3u8)
+
+03/04/2025 11:51:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+03/04/2025 11:51:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+03/04/2025 12:17:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/129535333/129535333.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/129535333/129535333.m3u8)
+
+03/04/2025 13:44:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/170334615/170334615.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/170334615/170334615.m3u8)
+
+03/04/2025 15:03:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+03/04/2025 15:04:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+03/04/2025 15:04:27 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+03/04/2025 15:25:48 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+03/04/2025 15:25:48 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+03/04/2025 15:25:48 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+03/04/2025 15:25:54 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+03/04/2025 15:25:54 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+03/04/2025 15:25:54 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+03/04/2025 15:33:24 模特已下线，停止录制: lp0001jp
+
+03/04/2025 15:34:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/135976407/135976407.m3u8 (403 Client Error: Forbidden for url: https://b-hls-26.doppiocdn.live/hls/135976407/135976407.m3u8)
+
+03/04/2025 15:36:36 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+03/04/2025 15:36:57 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+03/04/2025 15:37:59 模特已下线，停止录制: rena_zzz
+
+03/04/2025 15:39:20 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (403 Client Error: Forbidden for url: https://b-hls-15.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+03/04/2025 15:43:32 模特已下线，停止录制: nana_77_
+
+03/04/2025 15:44:07 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/170334615/170334615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/170334615/170334615.m3u8)
+
+03/04/2025 15:44:27 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/170334615/170334615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/170334615/170334615.m3u8)
+
+03/04/2025 15:45:30 读取流数据异常: -neru - Read timeout
+
+03/04/2025 15:51:25 模特已下线，停止录制: meg_0901
+
+03/04/2025 15:52:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/135976407/135976407.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/135976407/135976407.m3u8)
+
+03/04/2025 16:00:14 模特已下线，停止录制: -neru
+
+03/04/2025 16:00:29 模特已下线，停止录制: anna_mariia
+
+03/04/2025 16:01:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+03/04/2025 16:14:04 模特已下线，停止录制: ivywhyte
+
+03/04/2025 16:43:20 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/135747122/135747122.m3u8 (404 Client Error: Not Found for url: https://b-hls-14.doppiocdn.live/hls/135747122/135747122.m3u8)
+
+03/04/2025 16:44:04 模特已下线，停止录制: ichika_oo
+
+03/04/2025 16:44:31 模特已下线，停止录制: lp0001jp
+
+03/04/2025 17:10:34 读取流数据异常: anna_mariia - Read timeout
+
+03/04/2025 17:15:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:15:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:16:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:16:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:25:43 模特已下线，停止录制: -neru
+
+03/04/2025 17:25:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+03/04/2025 17:29:56 模特已下线，停止录制: ichika_oo
+
+03/04/2025 17:30:17 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/135747122/135747122.m3u8 (403 Client Error: Forbidden for url: https://b-hls-14.doppiocdn.live/hls/135747122/135747122.m3u8)
+
+03/04/2025 17:31:51 模特已下线，停止录制: -angelari-
+
+03/04/2025 17:33:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:34:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:34:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 17:49:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:51:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:51:45 读取流数据异常: miu_2525 - Read timeout
+
+03/04/2025 17:52:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:52:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:53:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:53:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 17:53:52 读取流数据异常: miu_2525 - Read timeout
+
+03/04/2025 17:54:10 读取流数据异常: anna_mariia - Read timeout
+
+03/04/2025 17:57:17 读取流数据异常: mikuty__choco - Read timeout
+
+03/04/2025 17:57:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 18:01:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 18:01:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+03/04/2025 18:01:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-10.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+03/04/2025 18:02:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 18:03:19 模特已下线，停止录制: anna_mariia
+
+03/04/2025 18:04:46 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/155673857/155673857.m3u8)
+
+03/04/2025 18:09:28 模特已下线，停止录制: anna_mariia
+
+03/04/2025 18:33:23 模特已下线，停止录制: -neru
+
+03/04/2025 18:33:33 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/173282768/173282768.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/173282768/173282768.m3u8)
+
+03/04/2025 18:34:54 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (403 Client Error: Forbidden for url: https://b-hls-15.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+03/04/2025 18:47:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/176392662/176392662.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/176392662/176392662.m3u8)
+
+03/04/2025 18:48:36 模特已下线，停止录制: pompumi
+
+03/04/2025 19:03:13 模特已下线，停止录制: -angelari-
+
+03/04/2025 19:03:42 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 19:04:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 19:08:44 模特已下线，停止录制: -angelari-
+
+03/04/2025 19:09:10 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 19:09:10 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117762271/117762271.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/117762271/117762271.m3u8)
+
+03/04/2025 19:31:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158479697/158479697.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/158479697/158479697.m3u8)
+
+03/04/2025 19:31:44 读取流数据异常: momo_room - Read timeout
+
+03/04/2025 19:32:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158479697/158479697.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/158479697/158479697.m3u8)
+
+03/04/2025 19:32:52 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158479697/158479697.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/158479697/158479697.m3u8)
+
+03/04/2025 19:44:22 模特已下线，停止录制: sumipepe
+
+03/04/2025 19:46:12 读取流数据异常: sumipepe - Read timeout
+
+03/04/2025 19:46:12 模特已下线，停止录制: suzu_
+
+03/04/2025 19:46:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (403 Client Error: Forbidden for url: https://b-hls-10.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+03/04/2025 19:58:10 模特已下线，停止录制: yui-ch
+
+03/04/2025 20:01:38 模特已下线，停止录制: sumipepe
+
+03/04/2025 20:04:05 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/135747122/135747122.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/135747122/135747122.m3u8)
+
+03/04/2025 20:06:42 模特已下线，停止录制: momo_room
+
+03/04/2025 20:08:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+03/04/2025 20:29:11 模特已下线，停止录制: -angelari-
+
+03/04/2025 20:29:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+03/04/2025 20:34:50 模特已下线，停止录制: miu_2525
+
+03/04/2025 20:35:58 读取流数据异常: anna_mariia - Read timeout
+
+03/04/2025 20:38:03 模特已下线，停止录制: suzu_
+
+03/04/2025 20:38:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+03/04/2025 20:39:00 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+03/04/2025 20:43:48 模特已下线，停止录制: ichika_oo
+
+03/04/2025 20:44:23 模特已下线，停止录制: honoka_maru
+
+03/04/2025 20:44:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158479697/158479697.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/158479697/158479697.m3u8)
+
+03/04/2025 20:45:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158479697/158479697.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/158479697/158479697.m3u8)
+
+03/04/2025 21:01:36 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+03/04/2025 21:01:57 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+03/04/2025 21:09:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/92781956/92781956.m3u8)
+
+03/04/2025 21:11:10 读取流数据异常: aoi2011 - Read timeout
+
+03/04/2025 21:28:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117762271/117762271.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/117762271/117762271.m3u8)
+
+03/04/2025 21:49:48 读取流数据异常: yui-ch - Read timeout
+
+03/04/2025 21:50:47 模特已下线，停止录制: anna_mariia
+
+03/04/2025 21:51:07 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+03/04/2025 21:51:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+03/04/2025 22:10:59 模特已下线，停止录制: yui-ch
+
+03/04/2025 22:14:43 模特已下线，停止录制: aoi2011
+
+03/04/2025 22:21:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+03/04/2025 22:21:26 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-14.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+03/04/2025 22:23:36 模特已下线，停止录制: momo_room
+
+03/04/2025 22:24:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (403 Client Error: Forbidden for url: https://b-hls-25.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+03/04/2025 22:49:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/92781956/92781956.m3u8)
+
+03/04/2025 22:54:06 模特已下线，停止录制: aoi2011
+
+03/04/2025 23:18:55 读取流数据异常: ivywhyte - [Errno 28] No space left on device
+
+03/04/2025 23:18:55 EXCEPTION: [Errno 28] No space left on device
+
+03/04/2025 23:21:20 读取流数据异常: ivywhyte - Read timeout
+
+03/04/2025 23:24:55 模特已下线，停止录制: anchan_
+
+03/04/2025 23:28:32 模特已下线，停止录制: alicelebel
+
+03/04/2025 23:29:20 模特已下线，停止录制: alicelebel
+
+03/04/2025 23:31:10 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 00:16:37 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+04/04/2025 00:16:38 模特已下线，停止录制: ni_suri
+
+04/04/2025 00:17:17 模特已下线，停止录制: anchan_
+
+04/04/2025 00:17:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (403 Client Error: Forbidden for url: https://b-hls-25.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+04/04/2025 00:18:17 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 00:19:55 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 00:21:19 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 00:23:02 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 00:27:03 模特已下线，停止录制: pompumi
+
+04/04/2025 00:43:02 模特已下线，停止录制: rio_chan_
+
+04/04/2025 00:43:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/158599798/158599798.m3u8)
+
+04/04/2025 01:01:06 模特已下线，停止录制: pompumi
+
+04/04/2025 01:06:01 模特已下线，停止录制: ni_suri
+
+04/04/2025 02:33:03 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 02:36:36 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 03:03:37 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+04/04/2025 03:03:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+04/04/2025 03:23:44 读取流数据异常: ivywhyte - Read timeout
+
+04/04/2025 03:53:59 模特已下线，停止录制: alicelebel
+
+04/04/2025 04:39:03 模特已下线，停止录制: ivywhyte
+
+04/04/2025 05:17:50 读取流数据异常: x__miku__x - Read timeout
+
+04/04/2025 05:18:18 模特已下线，停止录制: meg_0901
+
+04/04/2025 05:18:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (403 Client Error: Forbidden for url: https://b-hls-09.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+04/04/2025 05:19:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (403 Client Error: Forbidden for url: https://b-hls-09.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+04/04/2025 05:33:41 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 05:35:47 读取流数据异常: carolina_novoa - Read timeout
+
+04/04/2025 05:44:46 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/153986136/153986136.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/153986136/153986136.m3u8)
+
+04/04/2025 05:55:59 模特已下线，停止录制: meg_0901
+
+04/04/2025 06:12:23 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 06:13:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 06:13:42 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 06:17:26 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+04/04/2025 06:47:03 模特已下线，停止录制: x__miku__x
+
+04/04/2025 06:50:39 读取流数据异常: lanalee - Read timeout
+
+04/04/2025 06:59:11 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 07:20:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 07:34:12 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 07:45:20 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 07:45:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 07:49:17 读取流数据异常: carolina_novoa - Read timeout
+
+04/04/2025 07:51:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8)
+
+04/04/2025 07:52:17 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 07:54:46 读取流数据异常: lanalee - Read timeout
+
+04/04/2025 08:05:04 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 08:18:05 读取流数据异常: -marichan- - Read timeout
+
+04/04/2025 08:19:50 读取流数据异常: -marichan- - Read timeout
+
+04/04/2025 08:29:02 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 08:29:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 08:31:36 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 08:33:03 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 08:41:14 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 08:44:21 模特已下线，停止录制: -marichan-
+
+04/04/2025 09:00:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:00:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:08:06 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 09:08:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:08:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:09:11 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:33:13 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 09:33:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8)
+
+04/04/2025 09:33:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-09.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+04/04/2025 09:33:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+04/04/2025 09:35:06 读取流数据异常: _asunyan - Read timeout
+
+04/04/2025 09:36:45 读取流数据异常: -marichan- - Read timeout
+
+04/04/2025 09:45:06 读取流数据异常: _asunyan - Read timeout
+
+04/04/2025 09:47:56 模特已下线，停止录制: carolina_novoa
+
+04/04/2025 10:03:54 读取流数据异常: -marichan- - Read timeout
+
+04/04/2025 10:08:53 模特已下线，停止录制: -marichan-
+
+04/04/2025 10:31:48 读取流数据异常: lanalee - Read timeout
+
+04/04/2025 10:51:35 模特已下线，停止录制: _asunyan
+
+04/04/2025 10:57:22 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8)
+
+04/04/2025 10:57:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121630982/121630982.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/121630982/121630982.m3u8)
+
+04/04/2025 11:13:00 读取流数据异常: lanalee - Read timeout
+
+04/04/2025 11:21:06 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 11:22:43 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 11:25:17 模特已下线，停止录制: lanalee
+
+04/04/2025 11:36:44 模特已下线，停止录制: -marichan-
+
+04/04/2025 11:57:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+04/04/2025 12:26:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+04/04/2025 12:26:19 模特已下线，停止录制: alicelebel
+
+04/04/2025 12:27:14 模特已下线，停止录制: anna_mariia
+
+04/04/2025 13:06:58 模特已下线，停止录制: senachinnn
+
+04/04/2025 13:07:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123293744/123293744.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/123293744/123293744.m3u8)
+
+04/04/2025 13:09:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+04/04/2025 13:09:55 模特已下线，停止录制: senachinnn
+
+04/04/2025 13:10:43 模特已下线，停止录制: rena_zzz
+
+04/04/2025 13:11:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123293744/123293744.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/123293744/123293744.m3u8)
+
+04/04/2025 13:16:59 模特已下线，停止录制: senachinnn
+
+04/04/2025 13:26:54 模特已下线，停止录制: lanalee
+
+04/04/2025 13:27:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/95582231/95582231.m3u8)
+
+04/04/2025 13:46:39 读取流数据异常: rena_zzz - Read timeout
+
+04/04/2025 14:01:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+04/04/2025 14:01:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+04/04/2025 14:02:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+04/04/2025 14:19:17 模特已下线，停止录制: rena_zzz
+
+04/04/2025 14:19:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+04/04/2025 14:30:26 读取流数据异常: senachinnn - Read timeout
+
+04/04/2025 14:59:47 模特已下线，停止录制: _nono
+
+04/04/2025 15:00:06 模特已下线，停止录制: senachinnn
+
+04/04/2025 15:00:43 模特已下线，停止录制: anna_mariia
+
+04/04/2025 15:47:22 模特已下线，停止录制: alicelebel
+
+04/04/2025 16:05:04 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+04/04/2025 16:17:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/177877697/177877697.m3u8)
+
+04/04/2025 16:21:04 模特已下线，停止录制: rena_zzz
+
+04/04/2025 16:31:19 模特已下线，停止录制: alicelebel
+
+04/04/2025 16:58:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+04/04/2025 17:07:27 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 17:39:24 模特已下线，停止录制: anna_mariia
+
+04/04/2025 17:40:11 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+04/04/2025 17:42:03 模特已下线，停止录制: anna_mariia
+
+04/04/2025 17:42:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/19918511/19918511.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/19918511/19918511.m3u8)
+
+04/04/2025 17:53:45 模特已下线，停止录制: -angelari-
+
+04/04/2025 17:53:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 17:54:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8?playlistType=standard)
+
+04/04/2025 18:00:45 模特已下线，停止录制: -neru
+
+04/04/2025 18:10:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 18:11:21 模特已下线，停止录制: -angelari-
+
+04/04/2025 18:11:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 18:11:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 18:48:51 模特已下线，停止录制: -angelari-
+
+04/04/2025 18:54:56 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 19:03:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+04/04/2025 19:14:56 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:22:34 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:34:50 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:42:52 模特已下线，停止录制: nogizaka_ai
+
+04/04/2025 19:46:59 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:47:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 19:48:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 19:48:56 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 19:49:46 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:54:53 模特已下线，停止录制: -angelari-
+
+04/04/2025 19:57:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/109773605/109773605.m3u8 (404 Client Error: Not Found for url: https://b-hls-02.doppiocdn.live/hls/109773605/109773605.m3u8)
+
+04/04/2025 19:58:20 模特已下线，停止录制: -minami-
+
+04/04/2025 19:59:32 模特已下线，停止录制: -neru
+
+04/04/2025 20:05:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/57255263/57255263.m3u8?playlistType=standard)
+
+04/04/2025 20:05:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 20:05:42 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+04/04/2025 20:18:42 读取流数据异常: suzu_ - Read timeout
+
+04/04/2025 20:20:52 读取流数据异常: suzu_ - Read timeout
+
+04/04/2025 20:22:27 读取流数据异常: momochan88 - Read timeout
+
+04/04/2025 20:26:12 模特已下线，停止录制: -angelari-
+
+04/04/2025 20:29:39 读取流数据异常: suzu_ - Read timeout
+
+04/04/2025 20:30:31 读取流数据异常: momochan88 - Read timeout
+
+04/04/2025 20:30:39 模特已下线，停止录制: suzu_
+
+04/04/2025 20:38:23 读取流数据异常: runarunapi - Read timeout
+
+04/04/2025 20:46:45 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/158599798/158599798.m3u8)
+
+04/04/2025 20:46:55 模特已下线，停止录制: runarunapi
+
+04/04/2025 20:47:04 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181227702/181227702.m3u8 (403 Client Error: Forbidden for url: https://b-hls-15.doppiocdn.live/hls/181227702/181227702.m3u8)
+
+04/04/2025 21:11:01 模特已下线，停止录制: nogizaka_ai
+
+04/04/2025 21:12:12 模特已下线，停止录制: suzu_
+
+04/04/2025 21:12:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+04/04/2025 21:17:52 模特已下线，停止录制: suzu_
+
+04/04/2025 21:34:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+04/04/2025 21:34:35 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+04/04/2025 21:44:58 读取流数据异常: sakura-ch - Read timeout
+
+04/04/2025 21:46:21 模特已下线，停止录制: -minami-
+
+04/04/2025 21:51:08 模特已下线，停止录制: anna_mariia
+
+04/04/2025 22:01:00 读取流数据异常: momo_sumomo - Read timeout
+
+04/04/2025 22:05:18 模特已下线，停止录制: yume_jp
+
+04/04/2025 22:06:00 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/193499907/193499907.m3u8 (403 Client Error: Forbidden for url: https://b-hls-12.doppiocdn.live/hls/193499907/193499907.m3u8)
+
+04/04/2025 22:06:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+04/04/2025 22:07:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+04/04/2025 22:08:03 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/94957866/94957866.m3u8 (404 Client Error: Not Found for url: https://b-hls-25.doppiocdn.live/hls/94957866/94957866.m3u8)
+
+04/04/2025 22:08:23 模特已下线，停止录制: miru_xx
+
+04/04/2025 22:10:15 读取流数据异常: hikari_x0 - [Errno 28] No space left on device
+
+04/04/2025 22:10:15 读取流数据异常: anchan_ - [Errno 28] No space left on device
+
+04/04/2025 22:15:29 模特已下线，停止录制: momochan88
+
+04/04/2025 22:15:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/149443298/149443298.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/149443298/149443298.m3u8)
+
+04/04/2025 22:16:36 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/149443298/149443298.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/149443298/149443298.m3u8)
+
+04/04/2025 22:18:38 模特已下线，停止录制: momo_sumomo
+
+04/04/2025 22:19:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181456794/181456794.m3u8 (403 Client Error: Forbidden for url: https://b-hls-27.doppiocdn.live/hls/181456794/181456794.m3u8)
+
+04/04/2025 22:29:34 模特已下线，停止录制: sakura-ch
+
+04/04/2025 22:29:57 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/189293885/189293885.m3u8 (403 Client Error: Forbidden for url: https://b-hls-17.doppiocdn.live/hls/189293885/189293885.m3u8)
+
+04/04/2025 22:31:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/154279710/154279710.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/154279710/154279710.m3u8)
+
+04/04/2025 22:34:46 模特已下线，停止录制: anchan_
+
+04/04/2025 22:53:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/93629441/93629441.m3u8 (403 Client Error: Forbidden for url: https://b-hls-01.doppiocdn.live/hls/93629441/93629441.m3u8)
+
+04/04/2025 22:54:04 模特已下线，停止录制: ni_suri
+
+04/04/2025 22:55:55 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 22:57:38 读取流数据异常: ni_suri - Read timeout
+
+04/04/2025 23:01:28 模特已下线，停止录制: rio_chan_
+
+04/04/2025 23:06:34 模特已下线，停止录制: hikari_x0
+
+04/04/2025 23:08:17 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181227702/181227702.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/181227702/181227702.m3u8)
+
+04/04/2025 23:22:15 模特已下线，停止录制: alicelebel
+
+04/04/2025 23:23:19 模特已下线，停止录制: miru_xx
+
+04/04/2025 23:25:05 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 23:26:57 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 23:28:34 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 23:30:13 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 23:32:06 读取流数据异常: runarunapi - [Errno 28] No space left on device
+
+04/04/2025 23:32:06 读取流数据异常: ni_suri - [Errno 28] No space left on device
+
+04/04/2025 23:32:06 读取流数据异常: anchan_ - [Errno 28] No space left on device
+
+04/04/2025 23:32:07 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:07 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:15 读取流数据异常: rio_chan_ - [Errno 28] No space left on device
+
+04/04/2025 23:32:16 读取流数据异常: ni_suri - [Errno 28] No space left on device
+
+04/04/2025 23:32:16 读取流数据异常: runarunapi - [Errno 28] No space left on device
+
+04/04/2025 23:32:16 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:16 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:17 读取流数据异常: anchan_ - [Errno 28] No space left on device
+
+04/04/2025 23:32:18 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:19 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:23 读取流数据异常: alicelebel - Read timeout
+
+04/04/2025 23:32:26 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:36 读取流数据异常: rio_chan_ - [Errno 28] No space left on device
+
+04/04/2025 23:32:36 读取流数据异常: anchan_ - [Errno 28] No space left on device
+
+04/04/2025 23:32:36 读取流数据异常: runarunapi - [Errno 28] No space left on device
+
+04/04/2025 23:32:37 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:37 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:37 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:37 读取流数据异常: alicelebel - [Errno 28] No space left on device
+
+04/04/2025 23:32:37 读取流数据异常: ni_suri - [Errno 28] No space left on device
+
+04/04/2025 23:32:38 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:32:38 EXCEPTION: [Errno 28] No space left on device
+
+04/04/2025 23:39:56 模特已下线，停止录制: nogizaka_ai
+
+05/04/2025 00:00:47 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 00:00:47 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 00:00:47 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 00:13:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/94957866/94957866.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/94957866/94957866.m3u8)
+
+05/04/2025 00:13:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/94957866/94957866.m3u8 (404 Client Error: Not Found for url: https://b-hls-27.doppiocdn.live/hls/94957866/94957866.m3u8)
+
+05/04/2025 00:24:07 模特已下线，停止录制: runarunapi
+
+05/04/2025 00:24:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181227702/181227702.m3u8 (403 Client Error: Forbidden for url: https://b-hls-11.doppiocdn.live/hls/181227702/181227702.m3u8)
+
+05/04/2025 00:24:55 模特已下线，停止录制: anchan_
+
+05/04/2025 00:25:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+05/04/2025 00:30:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 00:41:13 模特已下线，停止录制: hikari_x0
+
+05/04/2025 00:45:31 模特已下线，停止录制: -minami-
+
+05/04/2025 00:45:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/109773605/109773605.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/109773605/109773605.m3u8)
+
+05/04/2025 00:52:04 模特已下线，停止录制: mens__man
+
+05/04/2025 00:54:27 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 00:54:27 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 00:54:27 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 00:54:35 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 00:54:35 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 00:54:35 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 01:13:48 模特已下线，停止录制: rio_chan_
+
+05/04/2025 01:14:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8)
+
+05/04/2025 01:14:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/158599798/158599798.m3u8)
+
+05/04/2025 01:26:51 模特已下线，停止录制: megu-mimi
+
+05/04/2025 01:35:03 模特已下线，停止录制: konocha_oo
+
+05/04/2025 01:48:16 模特已下线，停止录制: _yuzuki
+
+05/04/2025 02:09:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 02:09:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 02:10:14 模特已下线，停止录制: -angelari-
+
+05/04/2025 02:10:44 模特已下线，停止录制: _hiyor_
+
+05/04/2025 02:10:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 02:11:10 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 02:42:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 02:43:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 02:43:27 模特已下线，停止录制: -angelari-
+
+05/04/2025 02:51:28 模特已下线，停止录制: konocha_oo
+
+05/04/2025 02:51:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 03:01:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 03:01:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 03:05:08 模特已下线，停止录制: -angelari-
+
+05/04/2025 03:06:24 模特已下线，停止录制: ni_suri
+
+05/04/2025 03:15:47 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-02.doppiocdn.live/hls/57255263/57255263.m3u8?playlistType=standard)
+
+05/04/2025 03:47:08 模特已下线，停止录制: alicelebel
+
+05/04/2025 03:48:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/130863680/130863680.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/130863680/130863680.m3u8)
+
+05/04/2025 04:06:41 模特已下线，停止录制: -angelari-
+
+05/04/2025 04:07:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:07:22 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:14:09 模特已下线，停止录制: _hiyor_
+
+05/04/2025 04:14:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 04:22:45 模特已下线，停止录制: -angelari-
+
+05/04/2025 04:32:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/159631325/159631325.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/159631325/159631325.m3u8)
+
+05/04/2025 04:33:22 模特已下线，停止录制: _hiyor_
+
+05/04/2025 04:35:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:35:54 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-24.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:38:33 模特已下线，停止录制: _hiyor_
+
+05/04/2025 04:38:35 模特已下线，停止录制: -angelari-
+
+05/04/2025 04:38:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:39:16 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:39:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 04:51:34 模特已下线，停止录制: -angelari-
+
+05/04/2025 05:02:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 05:02:45 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 05:04:07 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 05:09:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+05/04/2025 05:27:27 模特已下线，停止录制: sweet-bb
+
+05/04/2025 05:29:38 读取流数据异常: sweet-bb - Read timeout
+
+05/04/2025 05:40:08 模特已下线，停止录制: sweet-bb
+
+05/04/2025 05:49:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/14645914/14645914.m3u8 (403 Client Error: Forbidden for url: https://b-hls-23.doppiocdn.live/hls/14645914/14645914.m3u8)
+
+05/04/2025 05:50:40 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 05:56:49 模特已下线，停止录制: -angelari-
+
+05/04/2025 05:57:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-18.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 05:57:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-18.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 06:03:58 模特已下线，停止录制: aoi2011
+
+05/04/2025 06:05:17 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (403 Client Error: Forbidden for url: https://b-hls-12.doppiocdn.live/hls/92781956/92781956.m3u8?playlistType=standard)
+
+05/04/2025 06:06:05 模特已下线，停止录制: sweet-bb
+
+05/04/2025 06:07:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/14645914/14645914.m3u8 (403 Client Error: Forbidden for url: https://b-hls-23.doppiocdn.live/hls/14645914/14645914.m3u8)
+
+05/04/2025 06:07:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 06:07:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 06:08:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8?playlistType=standard)
+
+05/04/2025 06:08:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 06:19:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/14645914/14645914.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/14645914/14645914.m3u8)
+
+05/04/2025 06:29:01 模特已下线，停止录制: -angelari-
+
+05/04/2025 06:29:38 模特已下线，停止录制: suzu_
+
+05/04/2025 06:31:09 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (403 Client Error: Forbidden for url: https://b-hls-26.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 06:33:23 模特已下线，停止录制: x__miku__x
+
+05/04/2025 06:33:52 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+05/04/2025 06:34:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/161301632/161301632.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/161301632/161301632.m3u8)
+
+05/04/2025 06:34:44 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 06:35:33 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 06:37:56 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 06:38:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 06:41:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/92781956/92781956.m3u8 (404 Client Error: Not Found for url: https://b-hls-15.doppiocdn.live/hls/92781956/92781956.m3u8)
+
+05/04/2025 06:43:21 模特已下线，停止录制: sweet-bb
+
+05/04/2025 06:47:55 模特已下线，停止录制: aoi2011
+
+05/04/2025 06:51:37 模特已下线，停止录制: -angelari-
+
+05/04/2025 06:52:15 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 06:52:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-07.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:06:11 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 07:06:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 07:11:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:11:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:11:48 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 07:12:33 模特已下线，停止录制: -angelari-
+
+05/04/2025 07:13:00 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (403 Client Error: Forbidden for url: https://b-hls-15.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 07:22:05 模特已下线，停止录制: sweet-bb
+
+05/04/2025 07:22:54 模特已下线，停止录制: -angelari-
+
+05/04/2025 07:24:34 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:25:26 模特已下线，停止录制: -angelari-
+
+05/04/2025 07:25:53 模特已下线，停止录制: suzu_
+
+05/04/2025 07:26:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 07:34:25 模特已下线，停止录制: sweet-bb
+
+05/04/2025 07:36:15 模特已下线，停止录制: -angelari-
+
+05/04/2025 07:36:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (403 Client Error: Forbidden for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:37:09 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 07:37:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 07:44:49 模特已下线，停止录制: anchan_
+
+05/04/2025 07:45:09 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 07:45:23 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/98260898/98260898.m3u8 (403 Client Error: Forbidden for url: https://b-hls-18.doppiocdn.live/hls/98260898/98260898.m3u8)
+
+05/04/2025 07:47:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:47:43 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-03.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 07:55:53 模特已下线，停止录制: -angelari-
+
+05/04/2025 07:57:28 模特已下线，停止录制: meg_0901
+
+05/04/2025 08:08:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/57255263/57255263.m3u8 (404 Client Error: Not Found for url: https://b-hls-22.doppiocdn.live/hls/57255263/57255263.m3u8)
+
+05/04/2025 08:14:23 模特已下线，停止录制: sweet-bb
+
+05/04/2025 08:41:31 模特已下线，停止录制: mirurun-08
+
+05/04/2025 08:42:13 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 08:43:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 08:43:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 08:45:17 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 08:47:36 模特已下线，停止录制: -angelari-
+
+05/04/2025 08:51:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/2935682/2935682.m3u8)
+
+05/04/2025 08:59:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/14645914/14645914.m3u8 (404 Client Error: Not Found for url: https://b-hls-10.doppiocdn.live/hls/14645914/14645914.m3u8)
+
+05/04/2025 09:21:04 模特已下线，停止录制: carolina_novoa
+
+05/04/2025 09:21:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 09:21:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 09:38:12 模特已下线，停止录制: mirurun-08
+
+05/04/2025 09:39:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8 (403 Client Error: Forbidden for url: https://b-hls-08.doppiocdn.live/hls/78788500/78788500.m3u8)
+
+05/04/2025 09:45:53 模特已下线，停止录制: sweet-bb
+
+05/04/2025 09:47:53 模特已下线，停止录制: riken_jp
+
+05/04/2025 09:54:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 10:01:50 模特已下线，停止录制: meg_0901
+
+05/04/2025 10:33:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+05/04/2025 10:34:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+05/04/2025 10:48:10 模特已下线，停止录制: riken_jp
+
+05/04/2025 10:49:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (403 Client Error: Forbidden for url: https://b-hls-12.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 10:51:52 模特已下线，停止录制: miu_2525
+
+05/04/2025 10:52:11 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175040864/175040864.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/175040864/175040864.m3u8)
+
+05/04/2025 10:59:45 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 11:00:04 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 11:00:25 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 11:37:30 模特已下线，停止录制: _asunyan
+
+05/04/2025 11:38:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/165716600/165716600.m3u8 (403 Client Error: Forbidden for url: https://b-hls-23.doppiocdn.live/hls/165716600/165716600.m3u8)
+
+05/04/2025 12:03:05 读取流数据异常: _nono - Read timeout
+
+05/04/2025 12:10:15 模特已下线，停止录制: mirurun-08
+
+05/04/2025 12:13:42 模特已下线，停止录制: mirurun-08
+
+05/04/2025 12:14:57 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8)
+
+05/04/2025 12:15:58 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/78788500/78788500.m3u8)
+
+05/04/2025 12:16:20 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/78788500/78788500.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/78788500/78788500.m3u8)
+
+05/04/2025 12:28:38 模特已下线，停止录制: _nono
+
+05/04/2025 12:33:26 模特已下线，停止录制: anna_mariia
+
+05/04/2025 12:34:52 读取流数据异常: mirurun-08 - Read timeout
+
+05/04/2025 13:06:34 读取流数据异常: mirurun-08 - Read timeout
+
+05/04/2025 13:07:45 模特已下线，停止录制: mirurun-08
+
+05/04/2025 13:31:59 模特已下线，停止录制: -anzu-o
+
+05/04/2025 13:32:16 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181435138/181435138.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/181435138/181435138.m3u8)
+
+05/04/2025 13:35:04 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 13:41:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 14:30:02 读取流数据异常: darylbarks - Read timeout
+
+05/04/2025 14:35:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 14:38:23 读取流数据异常: momo_room - Read timeout
+
+05/04/2025 14:38:26 模特已下线，停止录制: darylbarks
+
+05/04/2025 14:38:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/171989997/171989997.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/171989997/171989997.m3u8)
+
+05/04/2025 14:39:42 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/171989997/171989997.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/171989997/171989997.m3u8)
+
+05/04/2025 14:46:21 模特已下线，停止录制: _nono
+
+05/04/2025 14:46:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (403 Client Error: Forbidden for url: https://b-hls-20.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 14:47:32 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96689290/96689290.m3u8 (403 Client Error: Forbidden for url: https://b-hls-20.doppiocdn.live/hls/96689290/96689290.m3u8)
+
+05/04/2025 14:47:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/171989997/171989997.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/171989997/171989997.m3u8)
+
+05/04/2025 15:00:34 模特已下线，停止录制: anna_mariia
+
+05/04/2025 15:07:39 读取流数据异常: momo_room - Read timeout
+
+05/04/2025 15:10:22 模特已下线，停止录制: ranran_ch
+
+05/04/2025 15:12:59 读取流数据异常: ranran_ch - Read timeout
+
+05/04/2025 15:31:55 模特已下线，停止录制: edlinhargus
+
+05/04/2025 15:32:27 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/160228331/160228331.m3u8 (403 Client Error: Forbidden for url: https://b-hls-19.doppiocdn.live/hls/160228331/160228331.m3u8)
+
+05/04/2025 15:44:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/160228331/160228331.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/160228331/160228331.m3u8)
+
+05/04/2025 15:45:04 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/160228331/160228331.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/160228331/160228331.m3u8)
+
+05/04/2025 16:06:00 模特已下线，停止录制: momo_room
+
+05/04/2025 16:06:49 模特已下线，停止录制: anna_mariia
+
+05/04/2025 16:06:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (403 Client Error: Forbidden for url: https://b-hls-08.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 16:07:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (403 Client Error: Forbidden for url: https://b-hls-08.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 16:32:54 模特已下线，停止录制: ranran_ch
+
+05/04/2025 16:33:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (403 Client Error: Forbidden for url: https://b-hls-20.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+05/04/2025 17:01:09 读取流数据异常: edlinhargus - Read timeout
+
+05/04/2025 17:01:10 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 17:03:15 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 17:12:20 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 17:28:19 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (404 Client Error: Not Found for url: https://b-hls-01.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+05/04/2025 17:29:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+05/04/2025 17:30:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/146154828/146154828.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/146154828/146154828.m3u8)
+
+05/04/2025 17:45:25 模特已下线，停止录制: ranran_ch
+
+05/04/2025 18:00:45 模特已下线，停止录制: ranran_ch
+
+05/04/2025 18:01:46 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (404 Client Error: Not Found for url: https://b-hls-14.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+05/04/2025 18:04:12 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181435138/181435138.m3u8 (404 Client Error: Not Found for url: https://b-hls-20.doppiocdn.live/hls/181435138/181435138.m3u8)
+
+05/04/2025 18:04:13 模特已下线，停止录制: ranran_ch
+
+05/04/2025 18:07:45 模特已下线，停止录制: ranran_ch
+
+05/04/2025 18:07:55 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (403 Client Error: Forbidden for url: https://b-hls-14.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+05/04/2025 18:08:36 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/117759711/117759711.m3u8 (403 Client Error: Forbidden for url: https://b-hls-14.doppiocdn.live/hls/117759711/117759711.m3u8)
+
+05/04/2025 18:15:47 模特已下线，停止录制: konocha_oo
+
+05/04/2025 18:21:48 模特已下线，停止录制: miu_2525
+
+05/04/2025 18:22:16 模特已下线，停止录制: -neru
+
+05/04/2025 18:28:19 读取流数据异常: -anzu-o - Read timeout
+
+05/04/2025 18:30:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/193499907/193499907.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/193499907/193499907.m3u8)
+
+05/04/2025 18:31:52 读取流数据异常: yume_jp - Read timeout
+
+05/04/2025 18:43:55 模特已下线，停止录制: darylbarks
+
+05/04/2025 18:49:37 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 18:51:17 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 18:53:40 模特已下线，停止录制: -anzu-o
+
+05/04/2025 19:23:59 模特已下线，停止录制: edlinhargus
+
+05/04/2025 19:26:59 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+05/04/2025 19:27:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/172304655/172304655.m3u8 (404 Client Error: Not Found for url: https://b-hls-06.doppiocdn.live/hls/172304655/172304655.m3u8)
+
+05/04/2025 19:36:36 模特已下线，停止录制: yume_jp
+
+05/04/2025 19:38:43 模特已下线，停止录制: edlinhargus
+
+05/04/2025 19:48:46 读取流数据异常: -neru - Read timeout
+
+05/04/2025 19:52:57 读取流数据异常: runarunapi - Read timeout
+
+05/04/2025 19:58:09 模特已下线，停止录制: edlinhargus
+
+05/04/2025 19:58:41 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+05/04/2025 19:58:56 模特已下线，停止录制: -anzu-o
+
+05/04/2025 19:59:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-19.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+05/04/2025 20:01:36 读取流数据异常: _yuzuki - Read timeout
+
+05/04/2025 20:09:20 模特已下线，停止录制: _yuzuki
+
+05/04/2025 20:11:26 模特已下线，停止录制: runarunapi
+
+05/04/2025 20:11:37 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+05/04/2025 20:14:00 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 20:22:16 模特已下线，停止录制: koala_cici
+
+05/04/2025 20:23:33 读取流数据异常: yume_jp - Read timeout
+
+05/04/2025 20:31:35 模特已下线，停止录制: -neru
+
+05/04/2025 20:33:04 读取流数据异常: _yuzuki - Read timeout
+
+05/04/2025 20:37:52 模特已下线，停止录制: -neru
+
+05/04/2025 20:51:31 模特已下线，停止录制: _yuzuki
+
+05/04/2025 21:01:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-05.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 21:04:52 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-02.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 21:11:51 模特已下线，停止录制: mia--meow
+
+05/04/2025 21:16:10 模特已下线，停止录制: runarunapi
+
+05/04/2025 21:24:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123631935/123631935.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/123631935/123631935.m3u8)
+
+05/04/2025 21:26:01 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123631935/123631935.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/123631935/123631935.m3u8)
+
+05/04/2025 21:26:21 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123631935/123631935.m3u8 (404 Client Error: Not Found for url: https://b-hls-26.doppiocdn.live/hls/123631935/123631935.m3u8)
+
+05/04/2025 21:28:04 读取流数据异常: 35_miko - Read timeout
+
+05/04/2025 21:30:29 模特已下线，停止录制: love_momo_love
+
+05/04/2025 21:31:51 读取流数据异常: anna_mariia - Read timeout
+
+05/04/2025 21:32:59 模特已下线，停止录制: momo_room
+
+05/04/2025 21:35:10 模特已下线，停止录制: yume_jp
+
+05/04/2025 21:40:17 读取流数据异常: mia--meow - Read timeout
+
+05/04/2025 21:41:57 模特已下线，停止录制: momo_room
+
+05/04/2025 21:43:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (404 Client Error: Not Found for url: https://b-hls-23.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 21:50:44 模特已下线，停止录制: ni_suri
+
+05/04/2025 21:52:16 模特已下线，停止录制: rio_chan_
+
+05/04/2025 21:53:42 模特已下线，停止录制: anchan_
+
+05/04/2025 21:54:21 读取流数据异常: mia--meow - Read timeout
+
+05/04/2025 21:55:02 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+05/04/2025 21:56:45 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 21:56:45 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 21:56:45 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 21:56:56 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 21:56:56 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 21:56:56 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 21:59:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+05/04/2025 21:59:26 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (404 Client Error: Not Found for url: https://b-hls-08.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+05/04/2025 22:00:04 读取流数据异常: suzu_ - Read timeout
+
+05/04/2025 22:01:12 模特已下线，停止录制: anna_mariia
+
+05/04/2025 22:05:21 模特已下线，停止录制: momo_room
+
+05/04/2025 22:05:36 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/143942406/143942406.m3u8 (403 Client Error: Forbidden for url: https://b-hls-23.doppiocdn.live/hls/143942406/143942406.m3u8)
+
+05/04/2025 22:05:57 读取流数据异常: momona_xo - Read timeout
+
+05/04/2025 22:08:48 Web服务启动错误: 端口=8080, 错误类型=OSError, 错误信息=端口 8080 已被占用
+
+05/04/2025 22:08:48 Web服务启动错误: 端口=8081, 错误类型=OSError, 错误信息=端口 8081 已被占用
+
+05/04/2025 22:08:48 Web服务启动错误: 端口=8082, 错误类型=OSError, 错误信息=端口 8082 已被占用
+
+05/04/2025 22:09:36 模特已下线，停止录制: momo_sumomo
+
+05/04/2025 22:10:13 读取流数据异常: ni_suri - Read timeout
+
+05/04/2025 22:10:18 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 22:10:38 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (404 Client Error: Not Found for url: https://b-hls-12.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+05/04/2025 22:10:39 模特已下线，停止录制: mia--meow
+
+05/04/2025 22:11:56 读取流数据异常: ni_suri - Read timeout
+
+05/04/2025 22:26:59 模特已下线，停止录制: konocha_oo
+
+05/04/2025 22:31:28 读取流数据异常: ayachi__2525 - Read timeout
+
+05/04/2025 22:33:20 模特已下线，停止录制: momona_xo
+
+05/04/2025 22:33:47 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/194063327/194063327.m3u8 (403 Client Error: Forbidden for url: https://b-hls-04.doppiocdn.live/hls/194063327/194063327.m3u8)
+
+05/04/2025 22:34:28 模特已下线，停止录制: ayachi__2525
+
+05/04/2025 22:35:00 模特已下线，停止录制: suzu_
+
+05/04/2025 22:35:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184376007/184376007.m3u8 (403 Client Error: Forbidden for url: https://b-hls-17.doppiocdn.live/hls/184376007/184376007.m3u8)
+
+05/04/2025 22:38:17 模特已下线，停止录制: aika_1108
+
+05/04/2025 22:38:49 分段录制文件已移动到上传文件夹: ./up/35_miko/2025.04.05_22.08.53_35_miko.mp4
+
+05/04/2025 22:38:49 创建新录制片段: ./captures/35_miko/2025.04.05_22.38.49_35_miko.mp4
+
+05/04/2025 22:38:51 分段录制文件已移动到上传文件夹: ./up/miu-oxo/2025.04.05_22.08.54_miu-oxo.mp4
+
+05/04/2025 22:38:51 创建新录制片段: ./captures/miu-oxo/2025.04.05_22.38.51_miu-oxo.mp4
+
+05/04/2025 22:38:53 分段录制文件已移动到上传文件夹: ./up/koala_cici/2025.04.05_22.08.54_koala_cici.mp4
+
+05/04/2025 22:38:53 创建新录制片段: ./captures/koala_cici/2025.04.05_22.38.53_koala_cici.mp4
+
+05/04/2025 22:38:53 分段录制文件已移动到上传文件夹: ./up/anchan_/2025.04.05_22.08.53_anchan_.mp4
+
+05/04/2025 22:38:53 创建新录制片段: ./captures/anchan_/2025.04.05_22.38.53_anchan_.mp4
+
+05/04/2025 22:38:55 分段录制文件已移动到上传文件夹: ./up/rio_chan_/2025.04.05_22.08.53_rio_chan_.mp4
+
+05/04/2025 22:38:55 创建新录制片段: ./captures/rio_chan_/2025.04.05_22.38.55_rio_chan_.mp4
+
+05/04/2025 22:39:56 分段录制文件已移动到上传文件夹: ./up/momo_sumomo/2025.04.05_22.09.55_momo_sumomo.mp4
+
+05/04/2025 22:39:56 创建新录制片段: ./captures/momo_sumomo/2025.04.05_22.39.56_momo_sumomo.mp4
+
+05/04/2025 22:41:18 分段录制文件已移动到上传文件夹: ./up/riken_jp/2025.04.05_22.11.16_riken_jp.mp4
+
+05/04/2025 22:41:18 创建新录制片段: ./captures/riken_jp/2025.04.05_22.41.18_riken_jp.mp4
+
+05/04/2025 22:42:17 分段录制文件已移动到上传文件夹: ./up/ni_suri/2025.04.05_22.12.16_ni_suri.mp4
+
+05/04/2025 22:42:17 创建新录制片段: ./captures/ni_suri/2025.04.05_22.42.17_ni_suri.mp4
+
+05/04/2025 22:43:50 模特已下线，停止录制: miu-oxo
+
+05/04/2025 22:44:07 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (403 Client Error: Forbidden for url: https://b-hls-08.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+05/04/2025 22:44:48 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/175494496/175494496.m3u8 (403 Client Error: Forbidden for url: https://b-hls-08.doppiocdn.live/hls/175494496/175494496.m3u8)
+
+05/04/2025 22:50:51 模特已下线，停止录制: momo_sumomo
+
+05/04/2025 22:51:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181456794/181456794.m3u8 (403 Client Error: Forbidden for url: https://b-hls-11.doppiocdn.live/hls/181456794/181456794.m3u8)
+
+05/04/2025 22:52:08 模特已下线，停止录制: 35_miko
+
+05/04/2025 22:52:46 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/123631935/123631935.m3u8 (403 Client Error: Forbidden for url: https://b-hls-26.doppiocdn.live/hls/123631935/123631935.m3u8)
+
+05/04/2025 22:52:58 模特已下线，停止录制: aika_1108
+
+05/04/2025 22:53:06 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/193510797/193510797.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/193510797/193510797.m3u8)
+
+05/04/2025 22:53:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/193510797/193510797.m3u8 (404 Client Error: Not Found for url: https://b-hls-07.doppiocdn.live/hls/193510797/193510797.m3u8)
+
+05/04/2025 22:58:11 分段录制文件已移动到上传文件夹: ./up/opanchu___chu/2025.04.05_22.28.09_opanchu___chu.mp4
+
+05/04/2025 22:58:11 创建新录制片段: ./captures/opanchu___chu/2025.04.05_22.58.11_opanchu___chu.mp4
+
+05/04/2025 23:03:48 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/121356316/121356316.m3u8 (404 Client Error: Not Found for url: https://b-hls-21.doppiocdn.live/hls/121356316/121356316.m3u8)
+
+05/04/2025 23:04:38 模特已下线，停止录制: ivywhyte
+
+05/04/2025 23:08:53 分段录制文件已移动到上传文件夹: ./up/anchan_/2025.04.05_22.38.53_anchan_.mp4
+
+05/04/2025 23:08:53 创建新录制片段: ./captures/anchan_/2025.04.05_23.08.53_anchan_.mp4
+
+05/04/2025 23:08:53 创建新录制片段: ./captures/koala_cici/2025.04.05_23.08.53_koala_cici.mp4
+
+05/04/2025 23:09:02 分段录制文件已移动到上传文件夹: ./up/rio_chan_/2025.04.05_22.38.55_rio_chan_.mp4
+
+05/04/2025 23:09:02 创建新录制片段: ./captures/rio_chan_/2025.04.05_23.09.02_rio_chan_.mp4
+
+05/04/2025 23:10:37 模特已下线，停止录制: aika_1108
+
+05/04/2025 23:11:17 分段录制文件已移动到上传文件夹: ./up/riken_jp/2025.04.05_22.41.18_riken_jp.mp4
+
+05/04/2025 23:11:17 创建新录制片段: ./captures/riken_jp/2025.04.05_23.11.17_riken_jp.mp4
+
+05/04/2025 23:11:44 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/193510797/193510797.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/193510797/193510797.m3u8)
+
+05/04/2025 23:11:57 模特已下线，停止录制: anchan_
+
+05/04/2025 23:12:18 分段录制文件已移动到上传文件夹: ./up/ni_suri/2025.04.05_22.42.17_ni_suri.mp4
+
+05/04/2025 23:12:18 创建新录制片段: ./captures/ni_suri/2025.04.05_23.12.18_ni_suri.mp4
+
+05/04/2025 23:14:53 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/96175919/96175919.m3u8 (404 Client Error: Not Found for url: https://b-hls-16.doppiocdn.live/hls/96175919/96175919.m3u8)
+
+05/04/2025 23:15:08 分段录制文件已移动到上传文件夹: ./up/oo_ayane_c5/2025.04.05_22.45.08_oo_ayane_c5.mp4
+
+05/04/2025 23:15:08 创建新录制片段: ./captures/oo_ayane_c5/2025.04.05_23.15.08_oo_ayane_c5.mp4
+
+05/04/2025 23:19:01 读取流数据异常: suzu_ - Read timeout
+
+05/04/2025 23:20:22 读取流数据异常: opanchu___chu - Read timeout
+
+05/04/2025 23:20:40 模特已下线，停止录制: suzu_
+
+05/04/2025 23:20:56 模特已下线，停止录制: opanchu___chu
+
+05/04/2025 23:21:03 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/89104597/89104597.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/89104597/89104597.m3u8)
+
+05/04/2025 23:21:24 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/89104597/89104597.m3u8 (404 Client Error: Not Found for url: https://b-hls-18.doppiocdn.live/hls/89104597/89104597.m3u8)
+
+05/04/2025 23:22:26 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-04.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+05/04/2025 23:23:37 模特已下线，停止录制: _yuzuki
+
+05/04/2025 23:25:28 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 23:28:14 模特已下线，停止录制: oo_ayane_c5
+
+05/04/2025 23:29:35 分段录制文件已移动到上传文件夹: ./up/love_momo_love/2025.04.05_22.59.36_love_momo_love.mp4
+
+05/04/2025 23:29:35 创建新录制片段: ./captures/love_momo_love/2025.04.05_23.29.35_love_momo_love.mp4
+
+05/04/2025 23:34:47 分段录制文件已移动到上传文件夹: ./up/ivywhyte/2025.04.05_23.04.48_ivywhyte.mp4
+
+05/04/2025 23:34:47 创建新录制片段: ./captures/ivywhyte/2025.04.05_23.34.47_ivywhyte.mp4
+
+05/04/2025 23:38:43 模特已下线，停止录制: konocha_oo
+
+05/04/2025 23:38:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 23:38:53 创建新录制片段: ./captures/koala_cici/2025.04.05_23.38.53_koala_cici.mp4
+
+05/04/2025 23:39:04 分段录制文件已移动到上传文件夹: ./up/rio_chan_/2025.04.05_23.09.02_rio_chan_.mp4
+
+05/04/2025 23:39:04 创建新录制片段: ./captures/rio_chan_/2025.04.05_23.39.04_rio_chan_.mp4
+
+05/04/2025 23:39:31 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/187778976/187778976.m3u8)
+
+05/04/2025 23:41:17 分段录制文件已移动到上传文件夹: ./up/riken_jp/2025.04.05_23.11.17_riken_jp.mp4
+
+05/04/2025 23:41:17 创建新录制片段: ./captures/riken_jp/2025.04.05_23.41.17_riken_jp.mp4
+
+05/04/2025 23:42:19 分段录制文件已移动到上传文件夹: ./up/ni_suri/2025.04.05_23.12.18_ni_suri.mp4
+
+05/04/2025 23:42:19 创建新录制片段: ./captures/ni_suri/2025.04.05_23.42.19_ni_suri.mp4
+
+05/04/2025 23:51:45 分段录制文件已移动到上传文件夹: ./up/sherry_niko/2025.04.05_23.21.41_sherry_niko.mp4
+
+05/04/2025 23:51:45 创建新录制片段: ./captures/sherry_niko/2025.04.05_23.51.45_sherry_niko.mp4
+
+05/04/2025 23:53:45 分段录制文件已移动到上传文件夹: ./up/_yuzuki/2025.04.05_23.23.46__yuzuki.mp4
+
+05/04/2025 23:53:45 创建新录制片段: ./captures/_yuzuki/2025.04.05_23.53.45__yuzuki.mp4
+
+05/04/2025 23:59:35 创建新录制片段: ./captures/love_momo_love/2025.04.05_23.59.35_love_momo_love.mp4
+
+06/04/2025 00:02:28 读取流数据异常: ni_suri - Read timeout
+
+06/04/2025 00:02:39 模特已下线，停止录制: riken_jp
+
+06/04/2025 00:02:58 模特已下线，停止录制: love_momo_love
+
+06/04/2025 00:03:08 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+06/04/2025 00:03:09 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/184922259/184922259.m3u8 (403 Client Error: Forbidden for url: https://b-hls-12.doppiocdn.live/hls/184922259/184922259.m3u8)
+
+06/04/2025 00:03:29 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+06/04/2025 00:03:49 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (403 Client Error: Forbidden for url: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+06/04/2025 00:04:02 读取流数据异常: ni_suri - Read timeout
+
+06/04/2025 00:04:09 模特已下线，停止录制: _yuzuki
+
+06/04/2025 00:04:30 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+06/04/2025 00:04:48 分段录制文件已移动到上传文件夹: ./up/ivywhyte/2025.04.05_23.34.47_ivywhyte.mp4
+
+06/04/2025 00:04:48 创建新录制片段: ./captures/ivywhyte/2025.04.06_00.04.48_ivywhyte.mp4
+
+06/04/2025 00:04:50 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+06/04/2025 00:05:27 读取流数据异常: ni_suri - Read timeout
+
+06/04/2025 00:05:46 模特已下线，停止录制: love_momo_love
+
+06/04/2025 00:07:33 读取流数据异常: ni_suri - Read timeout
+
+06/04/2025 00:07:37 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/181438996/181438996.m3u8 (404 Client Error: Not Found for url: https://b-hls-17.doppiocdn.live/hls/181438996/181438996.m3u8)
+
+06/04/2025 00:08:54 创建新录制片段: ./captures/koala_cici/2025.04.06_00.08.54_koala_cici.mp4
+
+06/04/2025 00:09:39 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+06/04/2025 00:10:00 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/167036615/167036615.m3u8 (404 Client Error: Not Found for url: https://b-hls-11.doppiocdn.live/hls/167036615/167036615.m3u8)
+
+06/04/2025 00:10:00 读取流数据异常: rio_chan_ - Read timeout
+
+06/04/2025 00:13:32 分段录制文件已移动到上传文件夹: ./up/jynamorel/2025.04.05_23.43.34_jynamorel.mp4
+
+06/04/2025 00:13:32 创建新录制片段: ./captures/jynamorel/2025.04.06_00.13.32_jynamorel.mp4
+
+06/04/2025 00:16:17 模特已下线，停止录制: love_momo_love
+
+06/04/2025 00:17:51 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-14.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+06/04/2025 00:18:13 EXCEPTION: Unable to open URL: https://b-hls-13.doppiocdn.live/hls/188773458/188773458.m3u8 (404 Client Error: Not Found for url: https://b-hls-14.doppiocdn.live/hls/188773458/188773458.m3u8)
+
+06/04/2025 00:21:47 分段录制文件已移动到上传文件夹: ./up/sherry_niko/2025.04.05_23.51.45_sherry_niko.mp4
+
+06/04/2025 00:21:47 创建新录制片段: ./captures/sherry_niko/2025.04.06_00.21.47_sherry_niko.mp4
