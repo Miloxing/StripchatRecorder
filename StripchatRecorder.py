@@ -34,7 +34,8 @@ app_state = {
     "counterModel": 0,
     "port": 8080,  # 添加端口状态
     "web_status": "初始化中...",  # 添加web状态信息
-    "storage_info": {}  # 添加存储空间信息
+    "storage_info": {},  # 添加存储空间信息
+    "segment_duration": 30  # 分段录制时长，默认30分钟
 }
 
 # 获取存储空间信息
@@ -69,6 +70,7 @@ def index():
                            repeatedModels=app_state["repeatedModels"], 
                            counterModel=app_state["counterModel"],
                            port=app_state["port"],
+                           segment_duration=app_state["segment_duration"],
                            storage_info=app_state["storage_info"])  # 传递存储信息到模板
 
 @app.route('/edit_wanted', methods=['GET', 'POST'])
@@ -97,6 +99,21 @@ def stop_recording(model_name):
             with open('log.log', 'a+') as f:
                 f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 通过Web界面停止录制: {model_name}\n')
             break
+    return redirect(url_for('index'))
+
+# 添加设置分段录制时长的路由
+@app.route('/set_segment_duration', methods=['POST'])
+def set_segment_duration():
+    """设置分段录制时长"""
+    try:
+        new_duration = int(request.form['duration'])
+        if new_duration > 0:
+            app_state["segment_duration"] = new_duration
+            # 记录到日志
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 分段录制时长已更新为: {new_duration}分钟\n')
+    except (ValueError, KeyError):
+        pass  # 忽略无效输入
     return redirect(url_for('index'))
 
 # 添加启动web服务器的函数
@@ -186,6 +203,9 @@ def create_templates():
         .progress { height: 100%; background-color: #4CAF50; }
         .progress.warning { background-color: #ff9800; }
         .progress.danger { background-color: #f44336; }
+        .settings-form { background-color: #f9f9f9; padding: 15px; border-radius: 4px; margin-top: 20px; }
+        .settings-form input[type="number"] { padding: 8px; width: 80px; }
+        .settings-form button { padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -194,6 +214,17 @@ def create_templates():
         
         <div class="info">
             <p>Web界面运行于端口: {{ port }}</p>
+        </div>
+
+        <!-- 分段录制设置 -->
+        <div class="settings-form">
+            <h3>分段录制设置</h3>
+            <form action="/set_segment_duration" method="post">
+                <label for="duration">分段录制时长（分钟）:</label>
+                <input type="number" id="duration" name="duration" value="{{ segment_duration }}" min="1" required>
+                <button type="submit">保存设置</button>
+            </form>
+            <p>当前设置: 每录制 <strong>{{ segment_duration }}</strong> 分钟自动分段并移动到上传文件夹</p>
         </div>
 
         <!-- 存储空间信息 -->
@@ -323,6 +354,15 @@ def readConfig():
     except ValueError:
         if setting['postProcessingCommand'] and not setting['postProcessingThreads']:
             setting['postProcessingThreads'] = 1
+    
+    # 读取分段录制时长设置
+    try:
+        segment_duration = int(Config.get('settings', 'segmentDuration'))
+        if segment_duration > 0:
+            app_state["segment_duration"] = segment_duration
+    except (configparser.NoOptionError, ValueError):
+        # 如果配置文件中没有设置或值无效，使用默认值
+        pass
 
     if not os.path.exists(f'{setting["save_directory"]}'):
         os.makedirs(f'{setting["save_directory"]}')
@@ -423,6 +463,7 @@ class Modelo(threading.Thread):
         self.file = None
         self.online = None
         self.lock = threading.Lock()
+        self.segment_start_time = time.time()  # 记录片段开始时间
 
     def run(self):
         global recording, hilos
@@ -431,8 +472,7 @@ class Modelo(threading.Thread):
             self.online = False
         else:
             self.online = True
-            self.file = os.path.join(setting['save_directory'], self.modelo,
-                                     f'{datetime.datetime.fromtimestamp(time.time()).strftime("%Y.%m.%d_%H.%M.%S")}_{self.modelo}.mp4')
+            self.create_new_file()  # 创建新的录制文件
             try:
                 session = streamlink.Streamlink()
                 streams = session.streams(f'hlsvariant://{isOnline}')
@@ -440,51 +480,114 @@ class Modelo(threading.Thread):
                 fd = stream.open()
                 if not isModelInListofObjects(self.modelo, recording):
                     os.makedirs(os.path.join(setting['save_directory'], self.modelo), exist_ok=True)
-                    with open(self.file, 'wb') as f:
-                        self.lock.acquire()
-                        recording.append(self)
-                        for index, hilo in enumerate(hilos):
-                            if hilo.modelo == self.modelo:
-                                del hilos[index]
-                                break
-                        self.lock.release()
-                        # 添加最后一次检查在线状态的时间
-                        last_online_check = time.time()
-                        while not (self._stopevent.isSet() or os.fstat(f.fileno()).st_nlink == 0):
-                            try:
-                                # 每30秒检查一次模特是否仍在线
-                                current_time = time.time()
-                                if current_time - last_online_check > 30:
-                                    if not self.isOnline():
-                                        print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
-                                        with open('log.log', 'a+') as log_f:
-                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
-                                        break
-                                    last_online_check = current_time
+                    self.lock.acquire()
+                    recording.append(self)
+                    for index, hilo in enumerate(hilos):
+                        if hilo.modelo == self.modelo:
+                            del hilos[index]
+                            break
+                    self.lock.release()
+                    # 添加最后一次检查在线状态的时间
+                    last_online_check = time.time()
+                    # 添加当前文件的句柄
+                    current_file = open(self.file, 'wb')
+                    
+                    while not (self._stopevent.isSet() or os.fstat(current_file.fileno()).st_nlink == 0):
+                        try:
+                            # 每30秒检查一次模特是否仍在线
+                            current_time = time.time()
+                            if current_time - last_online_check > 30:
+                                if not self.isOnline():
+                                    print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
+                                    with open('log.log', 'a+') as log_f:
+                                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
+                                    break
+                                last_online_check = current_time
+                            
+                            # 检查是否需要创建新片段（每30分钟）
+                            if current_time - self.segment_start_time > app_state["segment_duration"] * 60:  # 使用全局设置的分段时长
+                                # 关闭当前文件
+                                current_file.close()
                                 
-                                # 使用非阻塞读取，设置1秒超时
-                                data = fd.read(1024)
-                                if not data:  # 如果没有数据，可能是流已经结束
-                                    # 再次检查是否在线
-                                    if not self.isOnline():
-                                        print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
-                                        with open('log.log', 'a+') as log_f:
-                                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
-                                        break
-                                f.write(data)
-                            except Exception as e:
+                                # 处理已完成的文件
+                                completed_file = self.file
+                                # 如果文件大于1KB，则处理它
+                                if os.path.getsize(completed_file) > 1024:
+                                    # 将文件移动到up目录
+                                    self.move_file_to_up(completed_file)
+                                else:
+                                    # 如果文件太小，删除它
+                                    os.remove(completed_file)
+                                
+                                # 创建新文件并更新开始时间
+                                self.segment_start_time = current_time
+                                self.create_new_file()
+                                current_file = open(self.file, 'wb')
+                                print(f"[分段录制] 创建新录制文件 {os.path.basename(self.file)} 用于模特 {self.modelo}")
                                 with open('log.log', 'a+') as log_f:
-                                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 读取流数据异常: {self.modelo} - {e}\n')
-                                fd.close()
-                                break
-                    if setting['postProcessingCommand']:
-                        processingQueue.put({'model': self.modelo, 'path': self.file})
+                                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 创建新录制片段: {self.file}\n')
+                            
+                            # 使用非阻塞读取，设置1秒超时
+                            data = fd.read(1024)
+                            if not data:  # 如果没有数据，可能是流已经结束
+                                # 再次检查是否在线
+                                if not self.isOnline():
+                                    print(f"[检测] 模特 {self.modelo} 已经下线，停止录制")
+                                    with open('log.log', 'a+') as log_f:
+                                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 模特已下线，停止录制: {self.modelo}\n')
+                                    break
+                            current_file.write(data)
+                        except Exception as e:
+                            with open('log.log', 'a+') as log_f:
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 读取流数据异常: {self.modelo} - {e}\n')
+                            fd.close()
+                            break
+                    
+                    # 关闭当前文件
+                    current_file.close()
+                    
+                    # 处理最后一个文件
+                    if os.path.isfile(self.file) and os.path.getsize(self.file) > 1024:
+                        if setting['postProcessingCommand']:
+                            processingQueue.put({'model': self.modelo, 'path': self.file})
+                        else:
+                            # 如果没有设置后处理命令，直接将文件移动到上传文件夹
+                            self.move_file_to_up(self.file)
+                    elif os.path.isfile(self.file):
+                        # 如果文件太小，删除它
+                        os.remove(self.file)
             except Exception as e:
                 with open('log.log', 'a+') as f:
                     f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} EXCEPTION: {e}\n')
                 self.stop()
             finally:
                 self.exceptionHandler()
+
+    def create_new_file(self):
+        """创建新的录制文件路径"""
+        self.file = os.path.join(setting['save_directory'], self.modelo,
+                                f'{datetime.datetime.fromtimestamp(time.time()).strftime("%Y.%m.%d_%H.%M.%S")}_{self.modelo}.mp4')
+    
+    def move_file_to_up(self, file_path):
+        """将文件移动到up文件夹"""
+        try:
+            up_dir = setting['up_directory']
+            # 创建模特名称对应的up子目录
+            model_up_dir = os.path.join(up_dir, self.modelo)
+            if not os.path.exists(model_up_dir):
+                os.makedirs(model_up_dir)
+            
+            filename = os.path.basename(file_path)
+            dest_path = os.path.join(model_up_dir, filename)
+            import shutil
+            shutil.move(file_path, dest_path)
+            print(f"[分段录制] {filename} 已移动到上传文件夹: {model_up_dir}")
+            # 记录日志
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 分段录制文件已移动到上传文件夹: {dest_path}\n')
+        except Exception as e:
+            with open('log.log', 'a+') as f:
+                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 移动分段录制文件时出错: {e}\n')
 
     def exceptionHandler(self):
         self.stop()
