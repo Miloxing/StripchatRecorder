@@ -80,15 +80,9 @@ do
       # 执行 rclone rmdirs 清理空目录
       rclone rmdirs "$source_dir"
       
-      # 确保up目录始终存在，即使其中的文件已经被移动
-      if [ ! -d "up" ]; then
-          mkdir -p "up"
-          echo "up目录不存在，已重新创建"
-      fi
-      
-      # 检查up目录是否为空（而不是检查是否存在）
-      if [ -z "$(ls -A up)" ]; then
-          echo "up上传成功，目录已清空但保留"
+      # 检查up目录是否存在且为空
+      if [ ! -d "$source_dir" ] || [ -z "$(ls -A $source_dir 2>/dev/null)" ]; then
+          echo "up上传成功，目录已清空"
           let runtime++
           if [ $runtime -ge 25 ]
           then

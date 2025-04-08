@@ -493,13 +493,13 @@ def postProcess():
             up_dir = setting['up_directory']
             # 创建模特名称对应的up子目录
             model_up_dir = os.path.join(up_dir, model)
-            if not os.path.exists(model_up_dir):
-                os.makedirs(model_up_dir)
-                
             dest_path = os.path.join(model_up_dir, filename)
             
             # 如果文件仍然存在并且大小大于1KB，则移动到up文件夹
             if os.path.isfile(path) and os.path.getsize(path) > 1024:
+                # 确保目标目录存在 (关键修改)
+                os.makedirs(model_up_dir, exist_ok=True)
+
                 import shutil
                 shutil.move(path, dest_path)
                 print(f"[移动文件] {filename} 已移动到上传文件夹: {model_up_dir}")
@@ -674,13 +674,13 @@ class Modelo(threading.Thread):
         """将文件移动到up文件夹"""
         try:
             up_dir = setting['up_directory']
-            # 创建模特名称对应的up子目录
-            model_up_dir = os.path.join(up_dir, self.modelo)
-            if not os.path.exists(model_up_dir):
-                os.makedirs(model_up_dir)
-            
             filename = os.path.basename(file_path)
+            model_up_dir = os.path.join(up_dir, self.modelo)
             dest_path = os.path.join(model_up_dir, filename)
+
+            # 确保目标目录存在 (关键修改)
+            os.makedirs(model_up_dir, exist_ok=True)
+
             import shutil
             shutil.move(file_path, dest_path)
             print(f"[分段录制] {filename} 已移动到上传文件夹: {model_up_dir}")
