@@ -738,6 +738,14 @@ class Modelo(threading.Thread):
             # 添加 User-Agent 模拟浏览器访问
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
             resp = requests.get(f'https://stripchat.com/api/front/v2/models/username/{self.modelo}/cam', headers=headers, timeout=10).json() # 添加超时
+            
+            # 检查响应类型
+            if isinstance(resp, list):
+                # 如果返回的是列表，说明可能是错误响应
+                with open('log.log', 'a+') as f:
+                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} API返回列表而不是预期的字典: {self.modelo}\n')
+                return False
+                
             hls_url = ''
             if 'cam' in resp.keys():
                 if {'isCamAvailable', 'streamName'} <= resp['cam'].keys():
@@ -751,15 +759,6 @@ class Modelo(threading.Thread):
                            hls_url = f'https://b-hls-13.doppiocdn.live/hls/{resp["cam"]["streamName"]}/{resp["cam"]["streamName"]}.m3u8'
 
             if len(hls_url):
-                # 简单的 m3u8 链接有效性检查 (可选，可能增加延迟)
-                # try:
-                #     r = requests.head(hls_url, timeout=5, headers=headers)
-                #     if r.status_code == 200:
-                #         return hls_url
-                #     else:
-                #         return False
-                # except requests.exceptions.RequestException:
-                #      return False
                 return hls_url # 暂时不检查有效性，直接返回
             else:
                 return False
