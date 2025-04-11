@@ -474,41 +474,91 @@ def process_existing_captures():
 
 
 def postProcess():
-    while True:
-        while processingQueue.empty():
-            time.sleep(1)
-        parameters = processingQueue.get()
-        model = parameters['model']
-        path = parameters['path']
-        filename = os.path.split(path)[-1]
-        directory = os.path.dirname(path)
-        file = os.path.splitext(filename)[0]
-        
-        # 执行原有的后处理命令
-        if setting['postProcessingCommand']:
-            subprocess.call(setting['postProcessingCommand'].split() + [path, filename, directory, model, file, 'cam4'])
-        
-        try:
-            # 将文件移动到up文件夹（与captures平级）下对应模特的子目录
-            up_dir = setting['up_directory']
-            # 创建模特名称对应的up子目录
-            model_up_dir = os.path.join(up_dir, model)
-            dest_path = os.path.join(model_up_dir, filename)
-            
-            # 如果文件仍然存在并且大小大于1KB，则移动到up文件夹
-            if os.path.isfile(path) and os.path.getsize(path) > 1024:
-                # 确保目标目录存在 (关键修改)
-                os.makedirs(model_up_dir, exist_ok=True)
+    # 添加日志：线程启动 (如果能确定启动位置，放在启动处更好，否则放在循环外)
+    with open('log.log', 'a+') as log_f:
+        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [线程] 后处理线程 postProcess 已启动。\n')
 
-                import shutil
-                shutil.move(path, dest_path)
-                print(f"[移动文件] {filename} 已移动到上传文件夹: {model_up_dir}")
-                # 记录日志
-                with open('log.log', 'a+') as f:
-                    f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 文件已移动到上传文件夹: {dest_path}\n')
+    while True:
+        try:
+            # 检查队列是否为空，如果为空则等待
+            while processingQueue.empty():
+                time.sleep(1) # 避免忙等待
+
+            # 从队列获取任务
+            parameters = processingQueue.get()
+            model = parameters.get('model', '未知模型') # 使用 .get 提供默认值
+            path = parameters.get('path', None)
+
+            if not path or not os.path.isfile(path):
+                 with open('log.log', 'a+') as log_f:
+                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [错误][postProcess] 从队列获取的任务无效或文件不存在: {parameters}\n')
+                 processingQueue.task_done() # 标记任务完成，即使是错误的
+                 continue # 处理下一个任务
+
+            filename = os.path.split(path)[-1]
+            directory = os.path.dirname(path)
+            file_base = os.path.splitext(filename)[0]
+
+            # 添加日志：开始处理任务
+            with open('log.log', 'a+') as log_f:
+                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [postProcess] 开始处理文件: {filename} (来自队列)\n')
+
+            # 检查是否配置了后处理命令
+            post_cmd_str = setting.get('postProcessingCommand', None)
+            if post_cmd_str:
+                # 构建命令列表
+                cmd_list = post_cmd_str.split() + [path, filename, directory, model, file_base, 'cam4'] # 确认 cam4 是否需要
+                # 添加日志：准备调用外部脚本
+                with open('log.log', 'a+') as log_f:
+                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [postProcess] 准备调用命令: {" ".join(cmd_list)}\n')
+
+                try:
+                    # 使用 subprocess.run 并设置超时 (例如 600 秒 = 10 分钟)
+                    # capture_output=True 可以捕获 stdout 和 stderr
+                    timeout_seconds = 600
+                    result = subprocess.run(cmd_list, check=False, capture_output=True, text=True, timeout=timeout_seconds)
+
+                    # 检查脚本退出码
+                    if result.returncode == 0:
+                        with open('log.log', 'a+') as log_f:
+                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [postProcess] 命令成功完成 (退出码 0): {filename}\n')
+                            # 如果需要，可以在这里记录 result.stdout
+                    else:
+                        # 记录错误，包括退出码、stdout 和 stderr
+                        with open('log.log', 'a+') as log_f:
+                            log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [错误][postProcess] 命令执行失败 (退出码 {result.returncode}) for {filename}:\n'
+                                        f'  命令: {" ".join(cmd_list)}\n'
+                                        f'  Stdout: {result.stdout.strip()}\n'
+                                        f'  Stderr: {result.stderr.strip()}\n')
+
+                except subprocess.TimeoutExpired:
+                    with open('log.log', 'a+') as log_f:
+                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [错误][postProcess] 命令执行超时 ({timeout_seconds}秒): {" ".join(cmd_list)} for {filename}\n')
+                except FileNotFoundError:
+                     with open('log.log', 'a+') as log_f:
+                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [错误][postProcess] 命令未找到 (请检查路径): {cmd_list[0]} for {filename}\n')
+                except Exception as e:
+                    # 捕获其他可能的 subprocess 异常
+                    with open('log.log', 'a+') as log_f:
+                        log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [错误][postProcess] 调用命令时发生未知异常 for {filename}: {e}\n'
+                                    f'  命令: {" ".join(cmd_list)}\n')
+
+            else:
+                # 如果没有配置 postProcessingCommand，则记录日志（或执行备选逻辑，但当前代码看不需要）
+                 with open('log.log', 'a+') as log_f:
+                    log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [警告][postProcess] 未配置 postProcessingCommand，跳过后处理步骤 for {filename}\n')
+
+            processingQueue.task_done() # 标记队列任务完成
+
+        except queue.Empty:
+             # 理论上不应该到达这里，因为上面有 empty() 检查，但作为健壮性措施保留
+             time.sleep(1)
         except Exception as e:
-            with open('log.log', 'a+') as f:
-                f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} 移动文件时出错: {e}\n')
+             # 捕获 postProcess 循环本身的未知错误
+             with open('log.log', 'a+') as log_f:
+                 log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [致命错误][postProcess] 后处理线程遇到意外错误: {e}\n')
+             # 考虑是否需要退出线程或只是记录并继续？这里选择记录并继续
+             time.sleep(5) # 避免错误快速刷屏
 
 
 class Modelo(threading.Thread):
@@ -628,7 +678,13 @@ class Modelo(threading.Thread):
                     # 处理最后一个文件
                     if os.path.isfile(self.file) and os.path.getsize(self.file) > 1024:
                         if setting['postProcessingCommand']:
+                            # 添加日志：准备放入队列
+                            with open('log.log', 'a+') as log_f:
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [队列] 准备将文件加入后处理队列: {self.file}\n')
                             processingQueue.put({'model': self.modelo, 'path': self.file})
+                            # 添加日志：已放入队列
+                            with open('log.log', 'a+') as log_f:
+                                log_f.write(f'\n{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")} [队列] 文件已加入后处理队列: {self.file}\n')
                         else:
                             # 如果没有设置后处理命令，直接将文件移动到上传文件夹
                             self.move_file_to_up(self.file)
